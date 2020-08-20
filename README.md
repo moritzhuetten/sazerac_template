@@ -1,1 +1,2 @@
-# sazerac_template
+# sazerac
+Steves' All Zoom Epoch of Reionisation Astronomy Conference

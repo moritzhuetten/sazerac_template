@@ -1,0 +1,97 @@
+
+
+td {
+  padding:5px;
+  min-width: 150px;
+}
+
+tr:hover {
+    background-color: #E5E5E5;
+}
+
+tr:hover td {
+    background-color: transparent; /* or #000 */
+}
+
+
+#talk_background {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  min-height: 100%;
+  background-color: #000;
+  opacity: 0.9;
+  display: none;
+}
+
+
+#talk_container {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.0);
+  display: none;
+}
+
+#talk_close {
+  margin: 0 auto;
+  position: absolute;
+  top:-15px;
+  right:-15px;
+  width: 30px;
+  }
+
+#talk_window {
+  margin: 0 auto;
+  /* overflow: hidden; */
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  min-height:300px;
+  background-color: #000;
+}
+
+#videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height:0;
+}
+
+#videoWrapper iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+
+#talk_info_container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  /* padding:20px 20px 20px 20px; */
+  color: #333;
+  background-color: #CCC;
+  vertical-align:bottom;
+}
+
+#talk_info {
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 95%;
+}
+
+#talk_title {
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+#talk_speaker {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+#talk_abstract {
+  font-size: 16px;
+}

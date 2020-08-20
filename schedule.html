@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/talks.css">
+
+
+    <!-- Scripts –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/schedule.js"></script>
+
+    <meta charset="utf-8">
+    <title>SAZERAC | LIVE SCHEDULE </title>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="navbar-spacer"></div>
+      <nav class="navbar">
+        <div class="container">
+          <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-link" href="index.html">SAZERAC</a></li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#" data-popover="#aboutNavPopover">About</a>
+              <div id="aboutNavPopover" class="popover">
+                <ul class="popover-list">
+                  <li class="popover-item">
+                    <a class="popover-link" href="index.html#Updates">Updates</a>
+                  </li>
+                  <li class="popover-item">
+                    <a class="popover-link" href="index.html#introduction">Introduction</a>
+                  </li>
+                  <li class="popover-item">
+                    <a class="popover-link" href="index.html#SOC">SOC</a>
+                  </li>
+                  <li class="popover-item">
+                    <a class="popover-link" href="index.html#schedule">Schedule</a>
+                  </li>
+                  <li class="popover-item">
+                    <a class="popover-link" href="index.html#conduct">Conduct</a>
+                  </li>
+                  <li class="popover-item">
+                    <a class="popover-link" href="index.html#contact">Contact Us</a>
+                  </li>
+                  <li class="popover-item">
+                    <a class="popover-link" href="index.html#sazerac">What is a Sazerac?</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navbar-item"><a class="navbar-link" href="posters.html">Posters</a></li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#" data-popover="#talksNavPopover">Talks</a>
+              <div id="talksNavPopover" class="popover">
+                <ul class="popover-list">
+                  <li class="popover-item">
+                    <a class="popover-link" href="schedule.html">Live Schedule</a>
+                  </li>
+                  <li class="popover-item">
+                    <a class="popover-link" href="talks.html">Recorded Talks</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navbar-item"><a class="navbar-link" href="participants.html">Participants</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+    <div class="docs-section" id="header">
+      <h3 class="docs-header">Live Schedule</h3>
+
+      <p> SAZERAC has five 3.5 hour sessions over 6-9 July. Each session will consist of two 90 minute sub-sessions with a 30 min break between. Four sessions will begin at 1330 UTC (0630/0930 US West/East Coast, 1430 in UK, 2230 in Tokyo) and one session will begin at 0800 UTC (0100/0400 US West/East Coast, 0900 in UK, 1700 in Tokyo). Talks will be 10 minutes long with 3 minutes for live questions and 2 minutes for handover.</p>
+
+      <ul>
+        <li><b>Session 1:</b> Monday 6 July 1330 UTC</li>
+        <li><b>Session 2:</b> Tuesday 7 July 1330 UTC</li>
+        <li><b>Session 3:</b> Wednesday 8 July 0800 UTC</li>
+        <li><b>Session 4:</b> Wednesday 8 July 1330 UTC</li>
+        <li><b>Session 5:</b> Thursday 9 July 1330 UTC</li>
+      </ul>
+
+      <p>You can download an <a href="https://en.wikipedia.org/wiki/ICalendar">iCalendar (.ics)</a> file containing the dates/times of the sessions/sub-sessions <a href="https://calendar.google.com/calendar/ical/bhespcgant0fodjg5budmlldoo%40group.calendar.google.com/private-c72d9d8116c19315f51164ff583d0f48/basic.ics">here</a>.</p>
+
+
+      <h4 class="docs-header">Talk listings</h4>
+
+      <p><b>Tip:</b> Hovering over the session ID provides the time in multiple timezones, hovering over the name provides the institution and email address, and hovering over the title shows the abstract.</p>
+
+      <h6 class="docs-header">Filter by tag</h6>
+
+      <a class="button" id="check_all_tags">Check all tags</a>
+      <a class="button" id="check_no_tags">Check no tags</a>
+      <div id='tag_list_div'><ul id = "tag_list"></ul></div>
+
+
+      <h6 class="docs-header">Filter by session</h6>
+
+      <a class="button" id="check_all_sessions">Check all sessions</a>
+      <a class="button" id="check_no_sessions">Check no sessions</a>
+      <div id='tag_list_div'><ul id = "session_list"></ul></div>
+
+      <div class="docs-section" id="showData"></div>
+
+    </div>
+
+
+    <div class="docs-section" id="selection">
+      <h5 class="docs-header">Selection process</h5>
+
+      <p>The large number (150) of live talk request submissions forced us to focus on early career researchers (ECRs) and specifically penultimate or final year PhD students and junior post-docs. Each submission was then blindly (i.e. without reference to the name or institution) and independently by 12 members of the SOC. Submissions were ranked equally based on <b>relevance</b> and <b>excitement</b>. To account for scoring differences between the different SOC members each members scores were normalised, however this made little difference to the overall ranking. The top 60 talks were then selected and invited to participate.</p>
+
+      <!-- <p>The estimated gender breakdown of registered participants, those ECRs eligible for a talk, and those selected for a talk is shown below.</p>
+
+      <img src="demographics/figures/talks_gender.png" width="500px">
+
+      <p><b>NOTE:</b> Gender was estimated using first names and the <a href="https://genderize.io">genderize.io</a> tool. This provides a probability that each name is either male or female. This tool fails in a small number of cases and will also not reflect any non-binary genders.</p> -->
+
+    </div>
+
+
+
+    </div>
+
+
+
+  </body>
+</html>
