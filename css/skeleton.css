@@ -25,6 +25,8 @@
 - Media Queries
 */
 
+html {background-color: #fff}
+
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -34,7 +36,8 @@
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+  }
 .column,
 .columns {
   width: 100%;
@@ -158,9 +161,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #6d2497; }
 a:hover {
-  color: #0FA0CE; }
+  color: #b378d5; }
 
 
 /* Buttons
@@ -206,8 +209,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+  background-color: #b378d5;
+  border-color: #b378d5; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -266,7 +269,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid #b378d5;
   outline: 0; }
 label,
 legend {
