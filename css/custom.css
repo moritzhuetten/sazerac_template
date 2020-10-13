@@ -82,7 +82,7 @@ h1 {
   /* font-weight: 600;  */
 }
 .docs-section {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #dac9e4;
   padding: 4rem 0;
   margin-bottom: 0;}
 .value-img {
@@ -91,7 +91,7 @@ h1 {
   margin: 2.5rem auto 0; }
 .example-grid .column,
 .example-grid .columns {
-  background: #EEE;
+  background: #dac9e4;
   text-align: center;
   border-radius: 4px;
   font-size: 1rem;
@@ -148,7 +148,8 @@ h1 {
 @media (min-width: 750px) {
   /* Navbar */
   .navbar + .docs-section {
-    border-top-width: 0; }
+    border-top-width: 0; 
+    width: 100%;}
   .navbar,
   .navbar-spacer {
     display: block;
@@ -156,8 +157,8 @@ h1 {
     height: 6.5rem;
     background: #fff;
     z-index: 99;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee; }
+    border-top: 1px solid #dac9e4;
+    border-bottom: 1px solid #dac9e4; }
   .navbar-spacer {
     display: none; }
   .navbar > .container {
@@ -177,13 +178,14 @@ h1 {
     margin-right: 35px;
     text-decoration: none;
     line-height: 6.5rem;
-    color: #222; }
+    color: #6d2497; } /* violet */
   .navbar-link.active {
-    color: #33C3F0; }
+    color: #6d2497; } /* unused */
   .has-docked-nav .navbar {
     position: fixed;
     top: 0;
-    left: 0; }
+    left: 0; 
+    }
   .has-docked-nav .navbar-spacer {
     display: block; }
   /* Re-overiding the width 100% declaration to match size of % based container */
@@ -200,7 +202,7 @@ h1 {
     top: 0;
     left: 0;
     background: #fff;
-    border: 1px solid #eee;
+    border: 1px solid #dac9e4;
     border-radius: 4px;
     top: 92%;
     left: -50%;
@@ -253,8 +255,8 @@ h1 {
     border-bottom-width: 0; }
   .popover-link:hover {
     color: #fff;
-    background: #33C3F0; }
+    background: #6d2497; }
   .popover-link:hover,
   .popover-item:first-child .popover-link:hover:after {
-    border-bottom-color: #33C3F0; }
+    border-bottom-color: #6d2497; }
 }
