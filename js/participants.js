@@ -49,7 +49,7 @@ function showInfo(results) {
       tabCell.innerHTML = '<b>'+d['First Name']+' '+d['Family Name']+'</b>';
 
       var tabCell = tr.insertCell(-1);
-      tabCell.innerHTML = d['Affiliation'];
+      tabCell.innerHTML = d['Affiliation']+', '+d['Country of your affiliation'];
 
   }
 
