@@ -12,10 +12,13 @@ function pad(n, width, z) {
 var csvfile = 'data/schedule.csv'
 
 
-var tags = ['Analogues','Reionization','Dark ages','First stars','AGN','Star formation histories','Metal/dust enrichment','Escape fractions','Theory','Observations','Tools','Outreach and diversity','Other'];
+var tags = ['DM Astrophysics','Axions & ALPs','Collider searches','DM Theory','Direct Detection','Indirect Detection','Invited talk','Contributed talk','Session A','Session B'];
 
-var time_zones = ['PDT','MDT','CDT','EDT','BST','CEST','CST','AWST','JST','AEST'];
-var offsets = [-7,-6,-5,-4,1,2,8,8,9,10];
+var time_zones = ['PST','MST','CST','EST','UTC','CET','IST', 'AWST','JST','AEST'];
+
+var days = ['Monday','Tuesday','Wednesday','Thursday','ddf'];
+
+var offsets = [-8,-7,-6,-5,0,1,5.3,8,9,10];
 
 var tag_state = {};
 var session_state = {};
@@ -49,7 +52,7 @@ function make_tag_list() {
     var tag = document.createElement("li");
     tag.className = 'tag';
     session = i+1;
-    tag.innerHTML = '<label><input class="session_checkbox" type="checkbox" id="session'+session+'" name="session'+session+'" checked=true> &nbsp; Session '+session+'</label>'
+    tag.innerHTML = '<label><input class="session_checkbox" type="checkbox" id="session'+session+'" name="session'+session+'" checked=true> &nbsp;'+days[i]+'</label>'
     $("#session_list").append(tag);
     session_state['session'+session] = true;
     console.log(i);
@@ -168,13 +171,16 @@ function showInfo() {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 3;
-            tabCell.innerHTML = '<span style="font-size:25pt;color:#888;"><b>SESSION '+session+'</b></span>';
+            tabCell.innerHTML = '<span style="font-size:25pt;color:#888;"><b>'+days[session-1]+'</b></span>';
+            if ((talk==0 && previous_talk==0) || (talk==1 && previous_talk==5) || (talk==1 && previous_talk==0)) {
+                tabCell.innerHTML +='<br><span style="color:#888;"><b>Before symposium starts: Lobby opens at 9:00 UTC <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a></b></span>';
+            }
           } else {
-            if (talk==1 && previous_talk==6) {
+            if (talk==1 && previous_talk==5) {
               tr = table.insertRow(-1);
               var tabCell = tr.insertCell(-1);
               tabCell.colSpan = 3;
-              tabCell.innerHTML = '<span style="font-size:20pt;color:#AAA;"><b>COFFEE/DISCUSSION BREAK</b></span>';
+              tabCell.innerHTML = '<span style="font-size:20pt;color:#AAA;">Coffee &amp; discussion break</span> <b>&nbsp;&nbsp;<a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a></b>';
             }
           }
 
@@ -185,13 +191,16 @@ function showInfo() {
 
           for (var k=0; k<time_zones.length; k++) {
             time = parseInt(d['Time'])+offsets[k]*100;
+            if (time.toString()[2]>5) {
+              time = time + 40;
+            }
             if (time>=2400) {
               time = time - 2400;
               time = pad(time, 4)+'+1';
             } else {
               time = pad(time, 4);
             }
-            time_list += '<b>'+time_zones[k]+': </b>'+time+'<br>';
+            time_list += '<b>'+time_zones[k]+': </b>'+time.slice(0, 2)+':'+time.slice(2, 4)+'<br>';
           }
 
 
@@ -200,7 +209,7 @@ function showInfo() {
           abstract = abstract.replace(/>/g, "&gt;");
 
           var tabCell = tr.insertCell(-1);
-          tabCell.innerHTML = '<div class="tooltip"><b>'+d['Session']+'/'+d['Talk']+'</b> '+d['Date']+' '+d['Time']+'<span class="tooltiptext" style="width:100px;">'+time_list+'</span></div>';
+          tabCell.innerHTML = '<div class="tooltip"><b>'+d['Session']+'/'+d['Talk']+'</b> '+d['Date']+', '+d['Time'].slice(0, 2)+':'+d['Time'].slice(2, 4)+'<span class="tooltiptext" style="width:100px;">'+time_list+'</span></div>';
 
           var tabCell = tr.insertCell(-1);
           tabCell.innerHTML = '<div class="tooltip"><b>'+d['First Name']+' '+d['Family Name']+ '<span class="tooltiptext" style="width:300px;">'+ d['Institution']+'<br><a href="mailto:'+d['Email']+'">'+d['Email']+'</a></span></div>';
@@ -213,18 +222,27 @@ function showInfo() {
 
           recording = '';
           if (recorded=='Yes') {
-            recording = ' <b><a href="'+d['YouTube']+'">[Recorded]</a></b>';
+            if (d['YouTube']!='') {
+                 recording = ' <b><a href="'+d['YouTube']+'">[Recording]</a></b>';
+            } else {
+                recording = ' <b><a href="https://www.youtube.com/channel/UCpjf2aTgzFsVM5lXT6LpgqA", target=_blank>Live stream</a></b>';
+            }
+          } else {
+          	recording = recorded;
           }
 
-          console.log(d['YouTube']);
-          if (d['YouTube']!='') {
-            recording = ' <b><a href="'+d['YouTube']+'">[Recording]</a></b>';
-          }
 
           tabCell.innerHTML = recording
 
           previous_session = session;
           previous_talk = talk;
+
+          if (talk==5 && d['Session'][1]=='B') {
+            tr = table.insertRow(-1);
+            var tabCell = tr.insertCell(-1);
+            tabCell.colSpan = 3;
+            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:45 UTC. Lobby remains open for discussion <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a></b></span><br><br>';
+          }
 
         }
 
