@@ -84,7 +84,8 @@
 
          <li class="navbar-item"><a class="navbar-link" href="registration.html">Registration</a></li>
 
-         <li class="navbar-item">
+         <li class="navbar-item"><a class="navbar-link" href="schedule.html">Schedule</a>
+         <!--><li class="navbar-item">
            <a class="navbar-link" href="#" data-popover="#talksNavPopover">Schedule</a>
            <div id="talksNavPopover" class="popover">
              <ul class="popover-list">
@@ -92,14 +93,14 @@
                  <a class="popover-link" href="schedule.html">Timetable</a>
                </li>
                <li class="popover-item">
-                 <a class="popover-link" href="schedule.html">List of talks</a>
+                 <a class="popover-link" href="schedule.html#talks">List of talks</a>
                </li>
                <!--<li class="popover-item">
                  <a class="popover-link" href="talks.html">Recorded Talks</a>
-               </li>-->
+               </li>
              </ul>
            </div>
-         </li>
+         </li> -->
          <li class="navbar-item"><a class="navbar-link" href="posters.html">Posters</a></li>
 
           <li class="navbar-item"><a class="navbar-link" href="participants.html">Participants</a></li>
@@ -126,13 +127,16 @@ onmouseout="this.src='images/youtube.png'"></a></li>
       <!-- We will allocate the daily symposium times to the maximum convenience of presenters and registrants <b>end of October</b>. We will also establish a space to present digital posters at the conference by Slack exchange during the time of the symposium.-->
       </p>
 
-
-    <!-- Schedule -->
-      <h4 class="docs-header">Timetable</h4>
-
+<h6 class="docs-header">Filter by time table</h6>
 <table style="width: 100%">
   <!-- <caption>Table Caption</caption>-->
   <tbody>
+    <tr style="border-bottom: 1px solid #E1E1E1; border-top: 0px solid #E1E1E1;">
+     <td style="border-right: 0px solid #E1E1E1;"></td>
+     <td style="border-right: 0px solid #E1E1E1;">Session A</td>
+     <td style="border-right: 0px solid #E1E1E1;"></td>
+     <td>Session B</td>
+    </tr>
     <tr style="border-bottom: 1px solid #E1E1E1; border-top: 1px solid #E1E1E1;">
      <td style="border-right: 1px solid #E1E1E1;">PST (West Coast)<br>EST (East Coast)<br><b>UTC</b><br>CET<br>JST</td>
      <td style="border-right: 1px solid #E1E1E1;">02:00 &ndash; 03:30<br>05:00 &ndash; 06:30<br><b>10:00 &ndash; 11:30</b><br>11:00 &ndash; 12:30<br>19:00 &ndash; 20:30</td>
@@ -147,7 +151,7 @@ onmouseout="this.src='images/youtube.png'"></a></li>
     </tr>
     <tr><!-- Second row-->
       <td style="border-right: 1px solid #E1E1E1;"><b>Tuesday, Nov. 17</b></td>
-      <td style="border-right: 1px solid #E1E1E1;">Direct Detection 1</td>
+      <td style="border-right: 1px solid #E1E1E1;"><a id="check_all_sessions" href="#showData">Direct Detection 1</a></td>
       <!-- <td>rowspan</td>-->
       <td>Direct Detection 2</td>
     </tr>
@@ -165,39 +169,34 @@ onmouseout="this.src='images/youtube.png'"></a></li>
     </tr>
   </tbody>
 </table>
-
+<br>
       <!--<p>You can download an <a href="https://en.wikipedia.org/wiki/ICalendar">iCalendar (.ics)</a> file containing the dates/times of the sessions/sub-sessions <a href="https://calendar.google.com/calendar/ical/bhespcgant0fodjg5budmlldoo%40group.calendar.google.com/private-c72d9d8116c19315f51164ff583d0f48/basic.ics">here</a>.</p>-->
 
     <!-- Schedule -->
-    <div class="docs-section" id="talks">
-      <h4 class="docs-header">Talk listings</h4>
+      <h6 class="docs-header">Filter by day</h6>
 
-      <p><b>Tip:</b> Hovering over the session ID provides the time in multiple timezones, hovering over the name provides the institution and email address, and hovering over the title shows the abstract.</p>
-
+      <a class="button" id="check_all_sessions">Check all days</a>
+      <a class="button" id="check_no_sessions">Clear selection</a>
+      <div id='tag_list_div'><ul id = "session_list"></ul></div>
+      <br>
       <h6 class="docs-header">Filter by tag</h6>
 
       <a class="button" id="check_all_tags">Check all tags</a>
-      <a class="button" id="check_no_tags">Check no tags</a>
+      <a class="button" id="check_no_tags">Clear selection</a>
       <div id='tag_list_div'><ul id = "tag_list"></ul></div>
-
-
-      <h6 class="docs-header">Filter by session</h6>
-
-      <a class="button" id="check_all_sessions">Check all sessions</a>
-      <a class="button" id="check_no_sessions">Check no sessions</a>
-      <div id='tag_list_div'><ul id = "session_list"></ul></div>
+<br>
+      <p><b>Tip:</b> Hovering over the session ID provides the time in multiple timezones, hovering over the name provides the institution and email address, and hovering over the title shows the abstract.</p>
 
       <div class="docs-section" id="showData"></div>
 
     </div>
 
 
-    <div class="docs-section" id="selection">
+      <!-- <div class="docs-section" id="selection">
       <h5 class="docs-header">Selection process</h5>
 
-      <p>The large number (150) of live talk request submissions forced us to focus on early career researchers (ECRs) and specifically penultimate or final year PhD students and junior post-docs. Each submission was then blindly (i.e. without reference to the name or institution) and independently by 12 members of the SOC. Submissions were ranked equally based on <b>relevance</b> and <b>excitement</b>. To account for scoring differences between the different SOC members each members scores were normalised, however this made little difference to the overall ranking. The top 60 talks were then selected and invited to participate.</p>
 
-      <!-- <p>The estimated gender breakdown of registered participants, those ECRs eligible for a talk, and those selected for a talk is shown below.</p>
+<p>The estimated gender breakdown of registered participants, those ECRs eligible for a talk, and those selected for a talk is shown below.</p>
 
       <img src="demographics/figures/talks_gender.png" width="500px">
 
