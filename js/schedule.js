@@ -173,7 +173,7 @@ function showInfo() {
             tabCell.colSpan = 4;
             tabCell.innerHTML = '<span style="font-size:22pt;color:#888;font-family:Quicksand;">'+days[session-1]+'</span>';
             if (((talk==0 && previous_talk==0) || (talk==1 && previous_talk==5) || (talk==1 && previous_talk==0)) && d['Session'][1]!='B') {
-                tabCell.innerHTML +='<br><span style="color:#888;"><b>Lobby opens at 9:00 UTC <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a></b></span>';
+                tabCell.innerHTML +='<br><span style="color:#888;"><b><a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby opens at 9:00 UTC</b></span>';
             }
           } else {
             if (talk==1 && previous_talk==5) {
@@ -245,12 +245,12 @@ function showInfo() {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 4;
-            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:45 UTC. Lobby remains open for discussion <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a></b></span><br><br>';
+            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:45 UTC. <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby remains open for discussion</b></span><br><br>';
           } else if (talk==6 && d['Session'][1]=='B' && session == 4) {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 4;
-            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 14:00 UTC. Lobby remains open until 16:00 UTC for discussion <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a></b></span><br><br>';
+            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 14:00 UTC. <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby remains open until 16:00 UTC for discussion</b></span><br><br>';
           }
 
         }
