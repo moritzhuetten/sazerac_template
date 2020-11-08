@@ -21,17 +21,15 @@ function shuffle(array) {
 }
 
 
-var tags = ['Analogues','Reionization','Dark ages','First stars','AGN','Star formation histories','Metal/dust enrichment','Escape fractions','Theory','Observations','Tools','Outreach and diversity','Other'];
+var csvfile = 'data/posters.csv'
 
-
-public_spreadsheet_url = 'https://cors-anywhere.herokuapp.com/https://docs.google.com/spreadsheets/d/e/2PACX-1vTiCh2eEGbqIqyabmOoT9t89ILSYJbcO84npWnnPBdDpv8KR8TigDNZvAgioASBWp6CDQ4FT7Bw6gY0/pub?gid=900996784&single=true&output=csv'
-
+var tags = ['DM Astrophysics','Axions & ALPs','Collider searches','DM Theory','Direct Detection','Indirect Detection'];
 
 var tag_state = {};
 
 function init() {
 
-  Papa.parse(public_spreadsheet_url, {
+  Papa.parse(csvfile, {
     download: true,
     header: true,
     complete: saveData
@@ -126,7 +124,7 @@ function showInfo() {
         tr.id = j;
 
         var tabCell = tr.insertCell(-1);
-        tabCell.innerHTML = '<div class="tooltip"><b>'+d['First Name']+' '+d['Family Name']+ '<span class="tooltiptext" style="width:300px;">'+ d['Institution']+'<br><a href="mailto:'+d['Email']+'">'+d['Email']+'</a></span></div>';
+        tabCell.innerHTML = '<div class="tooltip"><b>'+d['Name']+ '<span class="tooltiptext" style="width:300px;">'+ d['Institution']+'<br><a href="mailto:'+d['Email']+'">'+d['Email']+'</a></span></div>';
 
         var abstract = d['Abstract']
         abstract = abstract.replace(/</g, "&lt;");
@@ -136,7 +134,9 @@ function showInfo() {
         tabCell.innerHTML = '<div class="tooltip">'+d['Title'] + '<span class="tooltiptext"><b>' + d['Tags']+ '</b><br>' + abstract+'</span></div>';
 
         var tabCell = tr.insertCell(-1);
-        tabCell.innerHTML = '<a href="'+d['PDF']+'"><b>[Download Poster]</b></a>';
+        if (d['Slack']) {
+        tabCell.innerHTML = '<a href="'+d['Slack']+'" target=_blank><b>Slack channel</b></a>';
+        }
 
       }
 
@@ -148,3 +148,4 @@ function showInfo() {
   divContainer.appendChild(table);
 
 }
+
