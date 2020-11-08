@@ -170,8 +170,8 @@ function showInfo() {
           if (session != previous_session) {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
-            tabCell.colSpan = 3;
-            tabCell.innerHTML = '<span style="font-size:25pt;color:#888;"><b>'+days[session-1]+'</b></span>';
+            tabCell.colSpan = 4;
+            tabCell.innerHTML = '<span style="font-size:22pt;color:#888;font-family:Quicksand;">'+days[session-1]+'</span>';
             if (((talk==0 && previous_talk==0) || (talk==1 && previous_talk==5) || (talk==1 && previous_talk==0)) && d['Session'][1]!='B') {
                 tabCell.innerHTML +='<br><span style="color:#888;"><b>Lobby opens at 9:00 UTC <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a></b></span>';
             }
@@ -179,8 +179,12 @@ function showInfo() {
             if (talk==1 && previous_talk==5) {
               tr = table.insertRow(-1);
               var tabCell = tr.insertCell(-1);
-              tabCell.colSpan = 3;
-              tabCell.innerHTML = '<span style="font-size:20pt;color:#AAA;">Coffee &amp; discussion break</span> <b>&nbsp;&nbsp;<a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a></b>';
+              tabCell.colSpan = 4;
+              if (session==3) {
+              tabCell.innerHTML = '<span style="font-size:16pt;color:#AAA;">Poster session</span> <b>&nbsp;&nbsp;<a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a>/<a href=posters.html>List of posters</a></b>';
+              } else {
+              tabCell.innerHTML = '<span style="font-size:16pt;color:#AAA;">Coffee &amp; discussion break</span> <b>&nbsp;&nbsp;<a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a></b>';
+              }
             }
           }
 
@@ -209,7 +213,7 @@ function showInfo() {
           abstract = abstract.replace(/>/g, "&gt;");
 
           var tabCell = tr.insertCell(-1);
-          tabCell.innerHTML = '<div class="tooltip"><b>'+d['Session']+'/'+d['Talk']+'</b> '+d['Date']+', '+d['Time'].slice(0, 2)+':'+d['Time'].slice(2, 4)+'<span class="tooltiptext" style="width:100px;">'+time_list+'</span></div>';
+          tabCell.innerHTML = '<div class="tooltip">'+d['Date']+', '+d['Time'].slice(0, 2)+':'+d['Time'].slice(2, 4)+'<span class="tooltiptext" style="width:100px;">'+time_list+'</span></div>';
 
           var tabCell = tr.insertCell(-1);
           tabCell.innerHTML = '<div class="tooltip"><b>'+d['First Name']+' '+d['Family Name']+ '<span class="tooltiptext" style="width:300px;">'+ d['Institution']+'<br><a href="mailto:'+d['Email']+'">'+d['Email']+'</a></span></div>';
@@ -240,12 +244,12 @@ function showInfo() {
           if (talk==5 && d['Session'][1]=='B' && session != 4) {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
-            tabCell.colSpan = 3;
+            tabCell.colSpan = 4;
             tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:45 UTC. Lobby remains open for discussion <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a></b></span><br><br>';
           } else if (talk==6 && d['Session'][1]=='B' && session == 4) {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
-            tabCell.colSpan = 3;
+            tabCell.colSpan = 4;
             tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 14:00 UTC. Lobby remains open until 16:00 UTC for discussion <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a></b></span><br><br>';
           }
 
