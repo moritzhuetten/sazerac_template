@@ -16,7 +16,7 @@ var tags = ['DM Astrophysics','Axions & ALPs','Collider searches','DM Theory','D
 
 var time_zones = ['PST','MST','CST','EST','UTC','CET','IST', 'AWST','JST','AEST'];
 
-var days = ['Monday','Tuesday','Wednesday','Thursday','ddf'];
+var days = ['Monday','Tuesday','Wednesday','Thursday'];
 
 var offsets = [-8,-7,-6,-5,0,1,5.3,8,9,10];
 
@@ -48,7 +48,7 @@ function make_tag_list() {
 
   }
 
-  for (i=0; i<5; i++) {
+  for (i=0; i<4; i++) {
     var tag = document.createElement("li");
     tag.className = 'tag';
     session = i+1;
@@ -97,7 +97,7 @@ $(document).ready(function() {
 
   $("#check_all_sessions").click(function() {
     $('.session_checkbox').prop('checked', true);
-    for (i=0;i<5;i++) {
+    for (i=0;i<4;i++) {
       session = i+1;
       session_state['session'+session] = true;
     }
@@ -106,7 +106,7 @@ $(document).ready(function() {
 
   $("#check_no_sessions").click(function() {
     $('.session_checkbox').prop('checked', false);
-    for (i=0;i<5;i++) {
+    for (i=0;i<4;i++) {
       session = i+1;
       session_state['session'+session] = false;
     }
@@ -172,8 +172,8 @@ function showInfo() {
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 3;
             tabCell.innerHTML = '<span style="font-size:25pt;color:#888;"><b>'+days[session-1]+'</b></span>';
-            if ((talk==0 && previous_talk==0) || (talk==1 && previous_talk==5) || (talk==1 && previous_talk==0)) {
-                tabCell.innerHTML +='<br><span style="color:#888;"><b>Before symposium starts: Lobby opens at 9:00 UTC <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a></b></span>';
+            if (((talk==0 && previous_talk==0) || (talk==1 && previous_talk==5) || (talk==1 && previous_talk==0)) && d['Session'][1]!='B') {
+                tabCell.innerHTML +='<br><span style="color:#888;"><b>Lobby opens at 9:00 UTC <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a></b></span>';
             }
           } else {
             if (talk==1 && previous_talk==5) {
@@ -237,11 +237,16 @@ function showInfo() {
           previous_session = session;
           previous_talk = talk;
 
-          if (talk==5 && d['Session'][1]=='B') {
+          if (talk==5 && d['Session'][1]=='B' && session != 4) {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 3;
             tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:45 UTC. Lobby remains open for discussion <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a></b></span><br><br>';
+          } else if (talk==6 && d['Session'][1]=='B' && session == 4) {
+            tr = table.insertRow(-1);
+            var tabCell = tr.insertCell(-1);
+            tabCell.colSpan = 3;
+            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 14:00 UTC. Lobby remains open until 16:00 UTC for discussion <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a></b></span><br><br>';
           }
 
         }
