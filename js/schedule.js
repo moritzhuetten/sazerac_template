@@ -241,16 +241,21 @@ function showInfo() {
           previous_session = session;
           previous_talk = talk;
 
-          if (talk==5 && d['Session'][1]=='B' && session != 4) {
+          if (talk==5 && d['Session'][1]=='B' && session != 4 && session != 2) {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 4;
-            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:45 UTC. <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby remains open for discussion</b></span><br><br>';
+            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:30 UTC. <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby remains open for discussion</b></span><br><br>';
           } else if (talk==6 && d['Session'][1]=='B' && session == 4) {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 4;
-            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 14:00 UTC. <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby remains open until 16:00 UTC for discussion</b></span><br><br>';
+            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:45 UTC. <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby remains open until 16:00 UTC for discussion</b></span><br><br>';
+          } else if (talk==6 && d['Session'][1]=='B' && session == 2) {
+            tr = table.insertRow(-1);
+            var tabCell = tr.insertCell(-1);
+            tabCell.colSpan = 4;
+            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:35 UTC. <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby remains open until 16:00 UTC for discussion</b></span><br><br>';
           }
 
         }
