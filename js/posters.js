@@ -23,7 +23,7 @@ function shuffle(array) {
 
 var csvfile = 'data/posters.csv'
 
-var tags = ['DM Astrophysics','Axions & ALPs','Collider searches','DM Theory','Direct Detection','Indirect Detection'];
+var tags = ['DM Astrophysics','Axions & ALPs','Collider searches','DM Theory','Direct Detection','Indirect Detection','Poster room 1','Poster room 2','Poster room 3','Poster room 4','Poster room 5','Poster room 6','Poster room 7','Poster room 8'];
 
 var tag_state = {};
 
@@ -46,7 +46,11 @@ function make_tag_list() {
     tag_id = tags[i];
     var tag = document.createElement("li");
     tag.className = 'tag';
-    tag.innerHTML = '<label><input class="checkbox" type="checkbox" id="'+tag_id+'" name="'+tag_id+'" checked=true> &nbsp;'+tag_id+'</label>'
+    if (i!=5) {
+    	    tag.innerHTML = '<label><input class="checkbox" type="checkbox" id="'+tag_id+'" name="'+tag_id+'" checked=true> &nbsp;'+tag_id+'</label>'
+    } else {
+    	 tag.innerHTML = '<label style="margin-bottom:80px;"><input class="checkbox" type="checkbox" id="'+tag_id+'" name="'+tag_id+'" checked=true> &nbsp;'+tag_id+'</label>'
+    }
     $("#tag_list").append(tag);
     tag_state[tag_id] = true;
     console.log(tag_id, tag_state[tag_id])
@@ -131,7 +135,7 @@ function showInfo() {
         abstract = abstract.replace(/>/g, "&gt;");
 
         var tabCell = tr.insertCell(-1);
-        tabCell.innerHTML = '<div class="tooltip">'+d['Title'] + '<span class="tooltiptext"><b>' + d['Tags']+ '</b><br>' + abstract+'</span></div>';
+        tabCell.innerHTML = '<div class="tooltip">'+d['Title'] + '<span class="tooltiptext"><b><a href=https://spatial.chat/s/dm2020kashiwa target=_blank>' + talk_tags[0]+ '</a>: '+talk_tags[1]+'</b><br>' + abstract+'</span></div>';
 
         var tabCell = tr.insertCell(-1);
         if (d['Slack']) {

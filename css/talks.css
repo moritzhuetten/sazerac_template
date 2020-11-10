@@ -152,6 +152,6 @@ tr:hover td {
 }
 
 #tag_list_div {
-  width: 70%;
-  column-count: 3;
+  width: 80%;
+  column-count: 4;
 }

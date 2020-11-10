@@ -42,7 +42,11 @@ function make_tag_list() {
     tag_id = tags[i];
     var tag = document.createElement("li");
     tag.className = 'tag';
-    tag.innerHTML = '<label><input class="checkbox" type="checkbox" id="'+tag_id+'" name="'+tag_id+'" checked=true> &nbsp;'+tag_id+'</label>'
+    if (i!=7) {
+    	    tag.innerHTML = '<label><input class="checkbox" type="checkbox" id="'+tag_id+'" name="'+tag_id+'" checked=true> &nbsp;'+tag_id+'</label>'
+    } else {
+    	 tag.innerHTML = '<label  style="margin-bottom:80px;"><input class="checkbox" type="checkbox" id="'+tag_id+'" name="'+tag_id+'" checked=true> &nbsp;'+tag_id+'</label>'
+    }
     $("#tag_list").append(tag);
     tag_state[tag_id] = true;
 
