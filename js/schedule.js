@@ -255,7 +255,7 @@ function showInfo() {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 4;
-            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:35 UTC. <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby remains open until 16:00 UTC for discussion</b></span><br><br>';
+            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:35 UTC. <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby remains open for discussion<</b></span><br><br>';
           }
 
         }
