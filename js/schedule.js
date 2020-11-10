@@ -172,7 +172,7 @@ function showInfo() {
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 4;
             tabCell.innerHTML = '<span style="font-size:22pt;color:#888;font-family:Quicksand;">'+days[session-1]+'</span>';
-            if (((talk==0 && previous_talk==0) || (talk==1 && previous_talk==5) || (talk==1 && previous_talk==0)) && d['Session'][1]!='B') {
+            if (((talk==0 && previous_talk==0) || (talk==1 && previous_talk>=5) || (talk==1 && previous_talk==0)) && d['Session'][1]!='B') {
                 tabCell.innerHTML +='<br><span style="color:#888;"><b><a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby opens at 9:00 UTC</b></span>';
             }
           } else {
@@ -181,7 +181,7 @@ function showInfo() {
               var tabCell = tr.insertCell(-1);
               tabCell.colSpan = 4;
               if (session==3) {
-              tabCell.innerHTML = '<span style="font-size:16pt;color:#AAA;">Poster session</span> <b>&nbsp;&nbsp;<a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a>/<a href=posters.html>List of posters</a></b>';
+              tabCell.innerHTML = '<span style="font-size:16pt;color:#AAA;">Poster session</span> <span style="color:#888;"><b>&nbsp;&nbsp;<a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a>. See <a href=posters.html>here</a> for list of posters.</b></span>';
               } else {
               tabCell.innerHTML = '<span style="font-size:16pt;color:#AAA;">Coffee &amp; discussion break</span> <b>&nbsp;&nbsp;<a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a></b>';
               }
