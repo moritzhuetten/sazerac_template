@@ -225,6 +225,11 @@ function showInfo() {
           var tabCell = tr.insertCell(-1);
           tabCell.innerHTML = '<div class="tooltip">'+d['Title'] + '<span class="tooltiptext"><b>' + d['Tags']+ '</b><br>' + abstract +'</span></div>';
 
+          var tabCell = tr.insertCell(-1);
+          if (d['Slack']) {
+          tabCell.innerHTML = '<a href="'+d['Slack']+'" target=_blank><b>Slack channel</b></a>';
+          }
+          
           /*var tabCell = tr.insertCell(-1);
 
 
@@ -259,7 +264,7 @@ function showInfo() {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 4;
-            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:35 UTC. <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby remains open for discussion<</b></span><br><br>';
+            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:35 UTC. <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby remains open for discussion</b></span><br><br>';
           }
 
         }
