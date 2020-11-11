@@ -225,7 +225,7 @@ function showInfo() {
           var tabCell = tr.insertCell(-1);
           tabCell.innerHTML = '<div class="tooltip">'+d['Title'] + '<span class="tooltiptext"><b>' + d['Tags']+ '</b><br>' + abstract +'</span></div>';
 
-          var tabCell = tr.insertCell(-1);
+          /*var tabCell = tr.insertCell(-1);
 
 
           recording = '';
@@ -233,14 +233,14 @@ function showInfo() {
             if (d['YouTube']!='') {
                  recording = ' <b><a href="'+d['YouTube']+'">[Recording]</a></b>';
             } else {
-                recording = ' <b><a href="https://www.youtube.com/channel/UCpjf2aTgzFsVM5lXT6LpgqA", target=_blank>Live stream</a></b>';
+                recording =  <b><a href="https://www.youtube.com/channel/UCpjf2aTgzFsVM5lXT6LpgqA", target=_blank>Live stream</a></b>';
             }
           } else {
           	recording = recorded;
           }
 
 
-          tabCell.innerHTML = recording
+          tabCell.innerHTML = recording*/
 
           previous_session = session;
           previous_talk = talk;
