@@ -24,7 +24,7 @@ function showInfo(results) {
 
   console.log(window.data);
 
-  $('#header').append('<h4><b>'+window.data.length+'</b> people have registered so far.</h4>');
+  $('#header').append('<h4><b>'+window.data.length+'</b> people have registered.</h4>');
 
     window.data.sort(function(a, b) {
       return a['Family Name'] > b['Family Name'];
