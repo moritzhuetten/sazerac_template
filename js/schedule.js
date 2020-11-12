@@ -217,7 +217,7 @@ function showInfo() {
           abstract = abstract.replace(/>/g, "&gt;");
 
           var tabCell = tr.insertCell(-1);
-          tabCell.innerHTML = '<div class="tooltip">'+d['Date']+', '+d['Time'].slice(0, 2)+':'+d['Time'].slice(2, 4)+'<span class="tooltiptext" style="width:100px;">'+time_list+'</span></div>';
+          tabCell.innerHTML = '<div class="tooltip"id='+d['Session']+d['Talk']+' class="anchor"><!--<a href="https://2020.kashiwa-darkmatter-symposia.org/schedule.html#'+d['Session']+d['Talk']+'" style="text-decoration:none">&#128279;</a> &nbsp;-->'+d['Date']+', '+d['Time'].slice(0, 2)+':'+d['Time'].slice(2, 4)+'<span class="tooltiptext" style="width:100px;">'+time_list+'</span></div>';
 
           var tabCell = tr.insertCell(-1);
           tabCell.innerHTML = '<div class="tooltip"><b>'+d['First Name']+' '+d['Family Name']+ '<span class="tooltiptext" style="width:300px;">'+ d['Institution']+'<br><a href="mailto:'+d['Email']+'">'+d['Email']+'</a></span></div>';
