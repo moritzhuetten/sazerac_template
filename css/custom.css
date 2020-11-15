@@ -261,14 +261,32 @@ h1 {
     border-bottom-color: #6d2497; }
 }
 
-a.anchor {
+.button-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: none;
+  background: #fff;
+  color: #6d2497;
+  font-size: 26px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .18s ease;
+}
 
-        display: block;
+.button-top-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
 
-        position: relative;
-
-        top: -250px;
-
-        visibility: hidden;
-
-    }
+.button-top:hover {
+color: #b378d5;
+}
