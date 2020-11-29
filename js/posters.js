@@ -139,7 +139,7 @@ function showInfo() {
 
         var tabCell = tr.insertCell(-1);
         if (d['Slack']) {
-        tabCell.innerHTML = '<a href="'+d['Slack']+'" target=_blank><b>Slack channel</b></a>';
+        tabCell.innerHTML = '<a href="'+d['Pdf']+'" target=_blank><b>Download Poster</b></a>';
         }
 
       }
