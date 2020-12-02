@@ -233,6 +233,11 @@ function showInfo() {
           if (d['Pdf']) {
           tabCell.innerHTML = '<a href="'+d['Pdf']+'" target=_blank><b>Talk slides</b></a>';
           }
+
+          var tabCell = tr.insertCell(-1);
+          if (d['YouTube']) {
+          tabCell.innerHTML = '<a href="'+d['YouTube']+'" target=_blank><b>YouTube</b></a>';
+          }
           
           /*var tabCell = tr.insertCell(-1);
 
