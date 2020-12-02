@@ -138,8 +138,13 @@ function showInfo() {
         tabCell.innerHTML = '<div class="tooltip">'+d['Title'] + '<span class="tooltiptext"><b><a href=https://spatial.chat/s/dm2020kashiwa target=_blank>' + talk_tags[0]+ '</a>: '+talk_tags[1]+'</b><br>' + abstract+'</span></div>';
 
         var tabCell = tr.insertCell(-1);
-        if (d['Slack']) {
+        if (d['Pdf']) {
         tabCell.innerHTML = '<a href="'+d['Pdf']+'" target=_blank><b>Download Poster</b></a>';
+        }
+
+        var tabCell = tr.insertCell(-1);
+        if (d['Youtube']) {
+        tabCell.innerHTML = '<a href="'+d['Youtube']+'" target=_blank><b>YouTube</b></a>';
         }
 
       }
