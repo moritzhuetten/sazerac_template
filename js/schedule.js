@@ -174,6 +174,9 @@ function showInfo() {
           if (session != previous_session) {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
+            /*tabCell.style.minWidth = '2%';
+            tabCell.style.maxWidth = '2%';
+            tabCell.style.width = '2%';*/
             tabCell.colSpan = 4;
             tabCell.innerHTML = '<span style="font-size:22pt;color:#888;font-family:Quicksand;">'+days[session-1]+'</span>';
             if (((talk==0 && previous_talk==0) || (talk==1 && previous_talk>=5) || (talk==1 && previous_talk==0)) && d['Session'][1]!='B') {
@@ -232,11 +235,12 @@ function showInfo() {
           var tabCell = tr.insertCell(-1);
           if (d['Pdf']) {
           tabCell.innerHTML = '<a href="'+d['Pdf']+'" target=_blank><b>Talk slides</b></a>';
+          } else {
+          	tabCell.innerHTML = '<b style="color:#FFF;opacity:0;">Talk slides</b>';
           }
 
-          var tabCell = tr.insertCell(-1);
           if (d['YouTube']) {
-          tabCell.innerHTML = '<a href="'+d['YouTube']+'" target=_blank><b>YouTube</b></a>';
+          tabCell.innerHTML += '&nbsp;&nbsp;&nbsp;<a href="'+d['YouTube']+'?autoplay=1" target=_blank><b>YouTube</b></a>';
           }
           
           /*var tabCell = tr.insertCell(-1);
