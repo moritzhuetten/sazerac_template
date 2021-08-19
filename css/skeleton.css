@@ -161,9 +161,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #6d2497; }
+  color: #817061; }
 a:hover {
-  color: #b378d5; }
+  color: #b5a99e; }
 
 
 /* Buttons
@@ -209,8 +209,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #b378d5;
-  border-color: #b378d5; }
+  background-color: #b5a99e;
+  border-color: #b5a99e; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -269,7 +269,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #b378d5;
+  border: 1px solid #b5a99e;
   outline: 0; }
 label,
 legend {
