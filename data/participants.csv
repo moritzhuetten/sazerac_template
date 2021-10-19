@@ -1,4 +1,4 @@
-;;Your Name;Affiliation;Country of your affiliation;;;;;;;;;;;First Name;Family Name;;;;;
+;;Your Name;Affiliation;Country of your affiliation;;;;;;;;;;;First Name;Family Name;gender;;;;
 ;;Yuto Minami;RCNP, Osaka Univ.;Japan;;;;;;;;;;;Yuto;Minami;;;;;
 ;;Anna Genina;Max Planck Institute for Astrophysics;Germany;;;;;;;;;;;Anna;Genina;;;;;
 ;;Shu-Yu Ho;Korea Institute for Advanced Study;South Korea;;;;;;;;;;;Shu-Yu;Ho;;;;;
@@ -98,7 +98,7 @@
 ;;Kohei Yorita;Waseda University;Japan;;;;;;;;;;;Kohei;Yorita;;;;;
 ;;TAKUMI NAKAJIMA;Nagoya Univ.;Japan;;;;;;;;;;;TAKUMI;NAKAJIMA;;;;;
 ;;Miho Ishigaki;NAOJ;Japan;;;;;;;;;;;Miho;Ishigaki;;;;;
-;;Andrea Santangelo ;IAAT, Kepler Center, University of Tübingen;Germany;;;;;;;;;;;Andrea Santangelo;;;;;;
+;;Andrea Santangelo;IAAT, Kepler Center, University of Tübingen;Germany;;;;;;;;;;;Andrea;Santangelo;;;;;
 ;;Yasuhito Kaminaga;National Institute of Technology, Gunma College;Japan;;;;;;;;;;;Yasuhito;Kaminaga;;;;;
 ;;Gernot Maier;DESY;Germany;;;;;;;;;;;Gernot;Maier;;;;;
 ;;Anna Jankowsky;Max Planck for Particle Physics;Germany;;;;;;;;;;;Anna;Jankowsky;;;;;
@@ -117,7 +117,7 @@
 ;;Tobias Laimer;LMU Munich;Germany;;;;;;;;;;;Tobias;Laimer;;;;;
 ;;Shuhei Ozawa;Toyama University;Japan;;;;;;;;;;;Shuhei;Ozawa;;;;;
 ;;Bertrand Echenard;CAltech;USA;;;;;;;;;;;Bertrand;Echenard;;;;;
-;;Cristina Fernández ;Universidad Autónoma de Madrid ;Spain;;;;;;;;;;;Cristina Fernández;;;;;;
+;;Cristina Fernández;Universidad Autónoma de Madrid;Spain;;;;;;;;;;;Cristina;Fernández;;;;;
 ;;Lorenzo Aiello;Cardiff University;United Kingdon;;;;;;;;;;;Lorenzo;Aiello;;;;;
 ;;Lorenzo Marafatto;SIF italian physics society;Italia;;;;;;;;;;;Lorenzo;Marafatto;;;;;
 ;;Tsunefumi Mizuno;Hiroshima University;Japan;;;;;;;;;;;Tsunefumi;Mizuno;;;;;
