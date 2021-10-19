@@ -260,3 +260,33 @@ h1 {
   .popover-item:first-child .popover-link:hover:after {
     border-bottom-color: #817061; }
 }
+
+.button-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: none;
+  background: #fff;
+  color: #817061;
+  font-size: 26px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .18s ease;
+}
+
+.button-top-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.button-top:hover {
+color: #b5a99e;
+}
