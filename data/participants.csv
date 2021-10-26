@@ -1,136 +1,159 @@
-;;Your Name;Affiliation;Country of your affiliation;;;;;;;;;;;First Name;Family Name;gender;;;;
-;;Yuto Minami;RCNP, Osaka Univ.;Japan;;;;;;;;;;;Yuto;Minami;;;;;
-;;Anna Genina;Max Planck Institute for Astrophysics;Germany;;;;;;;;;;;Anna;Genina;;;;;
-;;Shu-Yu Ho;Korea Institute for Advanced Study;South Korea;;;;;;;;;;;Shu-Yu;Ho;;;;;
-;;Lingfeng Li;Brown U.;United States;;;;;;;;;;;Lingfeng;Li;;;;;
-;;Michael Schmidt;The University of New South Wales Sydney;Australia;;;;;;;;;;;Michael;Schmidt;;;;;
-;;Manoranjan Dutta;Indian Institute of Technology Hyderabad;India;;;;;;;;;;;Manoranjan;Dutta;;;;;
-;;SATYABRATA MAHAPATRA;INDIAN INSTITUTE OF TECHNOLOGY, HYDERABAD;INDIA;;;;;;;;;;;SATYABRATA;MAHAPATRA;;;;;
-;;Andrew Cheek;Astrocent, Nicolaus Copernicus Astronomical Center Polish Academy of Sciences;Poland;;;;;;;;;;;Andrew;Cheek;;;;;
-;;Kazunori Kohri;KEK;Japan;;;;;;;;;;;Kazunori;Kohri;;;;;
-;;Mattia Di Mauro;INFN Torino;Italy;;;;;;;;;;;Mattia Di;Mauro;;;;;
-;;Debajit Bose;IIT Kharagpur;India;;;;;;;;;;;Debajit;Bose;;;;;
-;;Stefano Profumo;University of California, Santa Cruz;USA;;;;;;;;;;;Stefano;Profumo;;;;;
-;;Michael Zantedeschi;Max-Planck Institute for Physics, Munich;Germany;;;;;;;;;;;Michael;Zantedeschi;;;;;
-;;Atsuhiro Umemoto;Tsukuba University;Japan;;;;;;;;;;;Atsuhiro;Umemoto;;;;;
-;;Sander Vermeulen;Cardiff University;United Kingdom;;;;;;;;;;;Sander;Vermeulen;;;;;
-;;Michele Doro;University of Padova;Italy;;;;;;;;;;;Michele;Doro;;;;;
-;;Genta Sato;Tohoku University;Japan;;;;;;;;;;;Genta;Sato;;;;;
-;;Chikara Kawai;U-Tokyo;Japan;;;;;;;;;;;Chikara;Kawai;;;;;
-;;Shoji Asai;U-Tokyo;Japan;;;;;;;;;;;Shoji;Asai;;;;;
-;;Alejandra Aguirre-Santaella;IFT UAM-CSIC;Spain;;;;;;;;;;;Alejandra;Aguirre-Santaella;;;;;
-;;Milena Crnogorcevic;University of Maryland/NASA Goddard;United States;;;;;;;;;;;Milena;Crnogorcevic;;;;;
-;;Ruben Lopez-Coto;INFN Padova;Italy;;;;;;;;;;;Ruben;Lopez-Coto;;;;;
-;;Kohei Hayashi;Ichinoseki College ;Japan;;;;;;;;;;;Kohei;Hayashi;;;;;
-;;Shigeki Matsumoto;Kavli IPMU, U. Tokyo;Japan;;;;;;;;;;;Shigeki;Matsumoto;;;;;
-;;Midori Sugahara;ICRR, The Univerisy of Tokyo;Japan;;;;;;;;;;;Midori;Sugahara;;;;;
-;;Shigenobu Hirose;JAMSTEC;Japan;;;;;;;;;;;Shigenobu;Hirose;;;;;
-;;Hiroyuki Sekiya;ICRR, The University of Tokyo;Japan;;;;;;;;;;;Hiroyuki;Sekiya;;;;;
-;;Shintaro Ito;KEK;Japan;;;;;;;;;;;Shintaro;Ito;;;;;
-;;Teruaki, Enoto;RIKEN;Japan;;;;;;;;;;;Teruaki,;Enoto;;;;;
-;;Ryu Sawada;ICEPP, the University of Tokyo;Japan;;;;;;;;;;;Ryu;Sawada;;;;;
-;;Hideaki Katagiri;Ibaraki University;Japan;;;;;;;;;;;Hideaki;Katagiri;;;;;
-;;Masaya Ishino;ICEPP, Tokyo University;Japan;;;;;;;;;;;Masaya;Ishino;;;;;
-;;Tomoyuki Shimasaki;the University of Tokyo;Japan;;;;;;;;;;;Tomoyuki;Shimasaki;;;;;
-;;Gen Tateno;ICEPP;Japan;;;;;;;;;;;Gen;Tateno;;;;;
-;;Junsei Tokuda;Kobe U.;Japan;;;;;;;;;;;Junsei;Tokuda;;;;;
-;;Junji Hisano;KMI, Nagoya Univ.;Japan;;;;;;;;;;;Junji;Hisano;;;;;
-;;Takashi Hamana;National Astronomical Observatory Japan;Japan;;;;;;;;;;;Takashi;Hamana;;;;;
-;;Ryota SHINOHARA;Waseda University;Japan;;;;;;;;;;;Ryota;SHINOHARA;;;;;
-;;Masaki Yamashita;Kavli IPMU, the University of Tokyo;Japan;;;;;;;;;;;Masaki;Yamashita;;;;;
-;;Tomomi Sunayama;Nagoya University;Japan;;;;;;;;;;;Tomomi;Sunayama;;;;;
-;;Kyoshi Nishijima;Tokai University;Japan;;;;;;;;;;;Kyoshi;Nishijima;;;;;
-;;Yu Zhou;JAXA/ISAS;Japan;;;;;;;;;;;Yu;Zhou;;;;;
-;;Hidetoshi Kubo;Kyoto University;Japan;;;;;;;;;;;Hidetoshi;Kubo;;;;;
-;;Ronald Cintra Shellard;Centro Brasileiro de Pesquisas Físicas (CBPF);Brazil;;;;;;;;;;;Ronald Cintra;Shellard;;;;;
-;;Toshiyuki Morii;Kobe university, Faculty of Human Development;Japan;;;;;;;;;;;Toshiyuki;Morii;;;;;
-;;Priscilla Pani;DESY;Germany;;;;;;;;;;;Priscilla;Pani;;;;;
-;;Demosthenes Kazanas;NASA/Goddard Space Flight Center;USA;;;;;;;;;;;Demosthenes;Kazanas;;;;;
-;;Takayuki Saito;ICRR;Japan;;;;;;;;;;;Takayuki;Saito;;;;;
-;;Katrin Streil;HESS;Germany;;;;;;;;;;;Katrin;Streil;;;;;
-;;Satsuki Nishimura;Kyushu University;Japan;;;;;;;;;;;Satsuki;Nishimura;;;;;
-;;Masayuki Nakahata;Kamioka Observatory, ICRR, Univ. of Tokyo;Japan;;;;;;;;;;;Masayuki;Nakahata;;;;;
-;;Yoichiro Suzuki;Univ. of Tokyo;Japan;;;;;;;;;;;Yoichiro;Suzuki;;;;;
-;;Atsushi Tokiyasu;Tohoku University;Japan;;;;;;;;;;;Atsushi;Tokiyasu;;;;;
-;;Tomonori Ikeda;Kyoto Univ.;Japan;;;;;;;;;;;Tomonori;Ikeda;;;;;
-;;Reiko Orito;Tokushima University;Japan;;;;;;;;;;;Reiko;Orito;;;;;
-;;Kato Sei;ICRR;Japan;;;;;;;;;;;Kato;Sei;;;;;
-;;Mike Dawson;Amateur;UK;;;;;;;;;;;Mike;Dawson;;;;;
-;;Elisa Ferreira;Max Planck Institute for Astrophysics;Germany;;;;;;;;;;;Elisa;Ferreira;;;;;
-;;Andrea Boccia;Università degli studi di napoli Federico II;Italy;;;;;;;;;;;Andrea;Boccia;;;;;
-;;Koji Noda;ICRR, U. Tokyo;Japan;;;;;;;;;;;Koji;Noda;;;;;
-;;Tatsuo Yoshida;Ibaraki University;Japan;;;;;;;;;;;Tatsuo;Yoshida;;;;;
-;;Manami Sasaki;Friedrich-Alexander-Universität Erlangen-Nürnberg;Germany;;;;;;;;;;;Manami;Sasaki;;;;;
-;;Charles Thorpe-Morgan;IAAT - University of Tübingen;Germany;;;;;;;;;;;Charles;Thorpe-Morgan;;;;;
-;;KATSUHIKO SATO;Research Center For Science Systems_JSPS;Japan;;;;;;;;;;;KATSUHIKO;SATO;;;;;
-;;Maurizio IORI;INFN;ITALY;;;;;;;;;;;Maurizio;IORI;;;;;
-;;Abdelhamid Haddad;Aix-Marseille University;France;;;;;;;;;;;Abdelhamid;Haddad;;;;;
-;;Gianluca Gregori;University of Oxford;United Kingdom;;;;;;;;;;;Gianluca;Gregori;;;;;
-;;Julian Osborne;University of Leicester;UK;;;;;;;;;;;Julian;Osborne;;;;;
-;;Hyuga Abe;ICRR;Japan;;;;;;;;;;;Hyuga;Abe;;;;;
-;;Shoichi Ichinose;Shizuoka University;Japan;;;;;;;;;;;Shoichi;Ichinose;;;;;
-;;Masashi Yokoyama;University of Tokyo;Japan;;;;;;;;;;;Masashi;Yokoyama;;;;;
-;;Alexander Zaytsev;Universität Hamburg;Germany;;;;;;;;;;;Alexander;Zaytsev;;;;;
-;;Ken-Ichi Fushimi;Tokushima University;Japan ;;;;;;;;;;;Ken-Ichi;Fushimi;;;;;
-;;Lalit Kumar Saini;University of Delhi;India;;;;;;;;;;;Lalit Kumar;Saini;;;;;
-;;Mihoko Nojiri;KEK ;Japan ;;;;;;;;;;;Mihoko;Nojiri;;;;;
-;;Motoi Endo;KEK;Japan ;;;;;;;;;;;Motoi;Endo;;;;;
-;;Percy Cáceres;Puc Rio de Janeiro;Brazil;;;;;;;;;;;Percy;Cáceres;;;;;
-;;Shigemi Ohta;IPNS, KEK;Japan;;;;;;;;;;;Shigemi;Ohta;;;;;
-;;Kaito Sugizaki;ICEPP, The University of Tokyo;Japan;;;;;;;;;;;Kaito;Sugizaki;;;;;
-;;Sei Yoshida;Osaka University;Japan;;;;;;;;;;;Sei;Yoshida;;;;;
-;;Kentarou Mawatari;Iwate U.;Japan;;;;;;;;;;;Kentarou;Mawatari;;;;;
-;;Shigetaka Moriyama;ICRR, University of Tokyo;Japan;;;;;;;;;;;Shigetaka;Moriyama;;;;;
-;;Elisa Pueschel;DESY;Germany;;;;;;;;;;;Elisa;Pueschel;;;;;
-;;Masahide Takada-Hidai;Tokai University;Japan;;;;;;;;;;;Masahide;Takada-Hidai;;;;;
-;;Kentaro Miuchi;Kobe University;Japan;;;;;;;;;;;Kentaro;Miuchi;;;;;
-;;Suyog Garg;The University of Tokyo;Japan;;;;;;;;;;;Suyog;Garg;;;;;
-;;Netor Mirabal;NASA GSFC;USA;;;;;;;;;;;Netor;Mirabal;;;;;
-;;Sandeep Kumar Shekhar;University of Padua;India;;;;;;;;;;;Sandeep Kumar;Shekhar;;;;;
-;;Keiko Nagao;Okayama University of Science;Japan;;;;;;;;;;;Keiko;Nagao;;;;;
-;;Saurabh Shukla;Physical Research Laboratory;India;;;;;;;;;;;Saurabh;Shukla;;;;;
-;;Kentaro Nagamine;Osaka U. / K-IPMU / UNLV;Japan;;;;;;;;;;;Kentaro;Nagamine;;;;;
-;;Masanori Iye;NAOJ;Japan;;;;;;;;;;;Masanori;Iye;;;;;
-;;Minoru Nishimura;The Open University of Japan;Japan;;;;;;;;;;;Minoru;Nishimura;;;;;
-;;Yasuyuki Horii;Nagoya University;Japan;;;;;;;;;;;Yasuyuki;Horii;;;;;
-;;Yuta Michimura;Department of Physics, University of Tokyo;Japan;;;;;;;;;;;Yuta;Michimura;;;;;
-;;Hiroaki Sugiyama;Toyama Prefectural Univ.;Japan;;;;;;;;;;;Hiroaki;Sugiyama;;;;;
-;;Kohei Yorita;Waseda University;Japan;;;;;;;;;;;Kohei;Yorita;;;;;
-;;TAKUMI NAKAJIMA;Nagoya Univ.;Japan;;;;;;;;;;;TAKUMI;NAKAJIMA;;;;;
-;;Miho Ishigaki;NAOJ;Japan;;;;;;;;;;;Miho;Ishigaki;;;;;
-;;Andrea Santangelo;IAAT, Kepler Center, University of Tübingen;Germany;;;;;;;;;;;Andrea;Santangelo;;;;;
-;;Yasuhito Kaminaga;National Institute of Technology, Gunma College;Japan;;;;;;;;;;;Yasuhito;Kaminaga;;;;;
-;;Gernot Maier;DESY;Germany;;;;;;;;;;;Gernot;Maier;;;;;
-;;Anna Jankowsky;Max Planck for Particle Physics;Germany;;;;;;;;;;;Anna;Jankowsky;;;;;
-;;Yunji Ha;Seoul National University ;South Korea;;;;;;;;;;;Yunji;Ha;;;;;
-;;Masayuki Wakayama;Chiba Institute of Technology;Japan;;;;;;;;;;;Masayuki;Wakayama;;;;;
-;;Anne Green;University of Nottingham;UK;;;;;;;;;;;Anne;Green;;;;;
-;;Tomohiro Fujita;Waseda University;Japan;;;;;;;;;;;Tomohiro;Fujita;;;;;
-;;K. Kasahara;Shibaura Inst. of Tech.;Japan;;;;;;;;;;;K.;Kasahara;;;;;
-;;Barbara Marcun;UNG ex-student;;;;;;;;;;;;Barbara;Marcun;;;;;
-;;Francisco Martínez López;University of Southampton and Queen Mary University of London;United Kingdom;;;;;;;;;;;Francisco Martínez;López;;;;;
-;;Kei-Ichi Kondo;Chiba University;Japan;;;;;;;;;;;Kei-Ichi;Kondo;;;;;
-;;Shihwen Hor;University of Tokyo;Japan;;;;;;;;;;;Shihwen;Hor;;;;;
-;;Soumya Sadhukhan;Ramakrishna Mission Residential College (Autonomous), Kolkata, West Bengal;India;;;;;;;;;;;Soumya;Sadhukhan;;;;;
-;;Julia Djuvsland;University of Bergen;Norway;;;;;;;;;;;Julia;Djuvsland;;;;;
-;;Giacomo D'Amico;University of Bergen;Norway;;;;;;;;;;;Giacomo;D'Amico;;;;;
-;;Tobias Laimer;LMU Munich;Germany;;;;;;;;;;;Tobias;Laimer;;;;;
-;;Shuhei Ozawa;Toyama University;Japan;;;;;;;;;;;Shuhei;Ozawa;;;;;
-;;Bertrand Echenard;CAltech;USA;;;;;;;;;;;Bertrand;Echenard;;;;;
-;;Cristina Fernández;Universidad Autónoma de Madrid;Spain;;;;;;;;;;;Cristina;Fernández;;;;;
-;;Lorenzo Aiello;Cardiff University;United Kingdon;;;;;;;;;;;Lorenzo;Aiello;;;;;
-;;Lorenzo Marafatto;SIF italian physics society;Italia;;;;;;;;;;;Lorenzo;Marafatto;;;;;
-;;Tsunefumi Mizuno;Hiroshima University;Japan;;;;;;;;;;;Tsunefumi;Mizuno;;;;;
-;;Shohei Yanagita;Ibaraki University;Japan;;;;;;;;;;;Shohei;Yanagita;;;;;
-;;Daniel Kerszberg;IFAE-BIST;Spain;;;;;;;;;;;Daniel;Kerszberg;;;;;
-;;Brandon Melcher;Northeastern University;United States of America;;;;;;;;;;;Brandon;Melcher;;;;;
-;;Hiroshi Ito;Tokyo University of Science;Japan;;;;;;;;;;;Hiroshi;Ito;;;;;
-;;Matthew Gorton;University of Nottingham;United Kingdom;;;;;;;;;;;Matthew;Gorton;;;;;
-;;Ibrahim Mirza;University of Tennessee;United States;;;;;;;;;;;Ibrahim;Mirza;;;;;
-;;Yohei Nishino;The University of Tokyo;Japan;;;;;;;;;;;Yohei;Nishino;;;;;
-;;Rasmi Hajjar;IFIC - SSM;Spain - Italy;;;;;;;;;;;Rasmi;Hajjar;;;;;
-;;Patricio Escalona;Universidad Técnica Federico Santa María;Chile;;;;;;;;;;;Patricio;Escalona;;;;;
-;;Maien Binjonaid;King Saud University;Saudi Arabia;;;;;;;;;;;Maien;Binjonaid;;;;;
-;;Adil Jueid;Korea Institute for Advanced Study;South Korea;;;;;;;;;;;Adil;Jueid;;;;;
-;;Tatsumi Nitta;University of Washington;USA;;;;;;;;;;;Tatsumi;Nitta;;;;;
-;;Moritz Hütten;ICRR, The University of Tokyo;Japan;;;;;;;;;;;Moritz;Hütten;;;;;
+,,Your Name,Affiliation,Country of your affiliation,,,,,,,,,,,First Name,Family Name,gender,,,,
+,,Kohei Hayashi,Ichinoseki College ,Japan,,,,,,,,,,,Kohei,Hayashi,,,,,
+,,Shigeki Matsumoto,"Kavli IPMU, U. Tokyo",Japan,,,,,,,,,,,Shigeki,Matsumoto,,,,,
+,,Midori Sugahara,"ICRR, The Univerisy of Tokyo",Japan,,,,,,,,,,,Midori,Sugahara,,,,,
+,,Shigenobu Hirose,JAMSTEC,Japan,,,,,,,,,,,Shigenobu,Hirose,,,,,
+,,Hiroyuki Sekiya,"ICRR, The University of Tokyo",Japan,,,,,,,,,,,Hiroyuki,Sekiya,,,,,
+,,Shintaro Ito,KEK,Japan,,,,,,,,,,,Shintaro,Ito,,,,,
+,,"Teruaki, Enoto",RIKEN,Japan,,,,,,,,,,,"Teruaki,",Enoto,,,,,
+,,Ryu Sawada,"ICEPP, the University of Tokyo",Japan,,,,,,,,,,,Ryu,Sawada,,,,,
+,,Hideaki Katagiri,Ibaraki University,Japan,,,,,,,,,,,Hideaki,Katagiri,,,,,
+,,Masaya Ishino,"ICEPP, Tokyo University",Japan,,,,,,,,,,,Masaya,Ishino,,,,,
+,,Tomoyuki Shimasaki,the University of Tokyo,Japan,,,,,,,,,,,Tomoyuki,Shimasaki,,,,,
+,,Gen Tateno,ICEPP,Japan,,,,,,,,,,,Gen,Tateno,,,,,
+,,Junsei Tokuda,Kobe U.,Japan,,,,,,,,,,,Junsei,Tokuda,,,,,
+,,Junji Hisano,"KMI, Nagoya Univ.",Japan,,,,,,,,,,,Junji,Hisano,,,,,
+,,Takashi Hamana,National Astronomical Observatory Japan,Japan,,,,,,,,,,,Takashi,Hamana,,,,,
+,,Ryota SHINOHARA,Waseda University,Japan,,,,,,,,,,,Ryota,SHINOHARA,,,,,
+,,Masaki Yamashita,"Kavli IPMU, the University of Tokyo",Japan,,,,,,,,,,,Masaki,Yamashita,,,,,
+,,Tomomi Sunayama,Nagoya University,Japan,,,,,,,,,,,Tomomi,Sunayama,,,,,
+,,Kyoshi Nishijima,Tokai University,Japan,,,,,,,,,,,Kyoshi,Nishijima,,,,,
+,,Yu Zhou,JAXA/ISAS,Japan,,,,,,,,,,,Yu,Zhou,,,,,
+,,Hidetoshi Kubo,Kyoto University,Japan,,,,,,,,,,,Hidetoshi,Kubo,,,,,
+,,Ronald Cintra Shellard,Centro Brasileiro de Pesquisas Físicas (CBPF),Brazil,,,,,,,,,,,Ronald Cintra,Shellard,,,,,
+,,Toshiyuki Morii,"Kobe university, Faculty of Human Development",Japan,,,,,,,,,,,Toshiyuki,Morii,,,,,
+,,Priscilla Pani,DESY,Germany,,,,,,,,,,,Priscilla,Pani,,,,,
+,,Demosthenes Kazanas,NASA/Goddard Space Flight Center,USA,,,,,,,,,,,Demosthenes,Kazanas,,,,,
+,,Takayuki Saito,ICRR,Japan,,,,,,,,,,,Takayuki,Saito,,,,,
+,,Katrin Streil,HESS,Germany,,,,,,,,,,,Katrin,Streil,,,,,
+,,Satsuki Nishimura,Kyushu University,Japan,,,,,,,,,,,Satsuki,Nishimura,,,,,
+,,Kazunori Kohri,KEK,Japan,,,,,,,,,,,Kazunori,Kohri,,,,,
+,,Masayuki Nakahata,"Kamioka Observatory, ICRR, Univ. of Tokyo",Japan,,,,,,,,,,,Masayuki,Nakahata,,,,,
+,,Yoichiro Suzuki,Univ. of Tokyo,Japan,,,,,,,,,,,Yoichiro,Suzuki,,,,,
+,,Atsushi Tokiyasu,Tohoku University,Japan,,,,,,,,,,,Atsushi,Tokiyasu,,,,,
+,,Tomonori Ikeda,Kyoto Univ.,Japan,,,,,,,,,,,Tomonori,Ikeda,,,,,
+,,Reiko Orito,Tokushima University,Japan,,,,,,,,,,,Reiko,Orito,,,,,
+,,Kato Sei,ICRR,Japan,,,,,,,,,,,Kato,Sei,,,,,
+,,Shu-Yu Ho,Korea Institute for Advanced Study,South Korea,,,,,,,,,,,Shu-Yu,Ho,,,,,
+,,Atsuhiro Umemoto,Tsukuba University,Japan,,,,,,,,,,,Atsuhiro,Umemoto,,,,,
+,,Mike Dawson,Amateur,UK,,,,,,,,,,,Mike,Dawson,,,,,
+,,Elisa Ferreira,Max Planck Institute for Astrophysics,Germany,,,,,,,,,,,Elisa,Ferreira,,,,,
+,,Andrea Boccia,Università degli studi di napoli Federico II,Italy,,,,,,,,,,,Andrea,Boccia,,,,,
+,,Koji Noda,"ICRR, U. Tokyo",Japan,,,,,,,,,,,Koji,Noda,,,,,
+,,Tatsuo Yoshida,Ibaraki University,Japan,,,,,,,,,,,Tatsuo,Yoshida,,,,,
+,,Mattia Di Mauro,INFN Torino,Italy,,,,,,,,,,,Mattia Di,Mauro,,,,,
+,,Manami Sasaki,Friedrich-Alexander-Universität Erlangen-Nürnberg,Germany,,,,,,,,,,,Manami,Sasaki,,,,,
+,,Charles Thorpe-Morgan,IAAT - University of Tübingen,Germany,,,,,,,,,,,Charles,Thorpe-Morgan,,,,,
+,,KATSUHIKO SATO,Research Center For Science Systems_JSPS,Japan,,,,,,,,,,,KATSUHIKO,SATO,,,,,
+,,Maurizio IORI,INFN,ITALY,,,,,,,,,,,Maurizio,IORI,,,,,
+,,Abdelhamid Haddad,Aix-Marseille University,France,,,,,,,,,,,Abdelhamid,Haddad,,,,,
+,,Gianluca Gregori,University of Oxford,United Kingdom,,,,,,,,,,,Gianluca,Gregori,,,,,
+,,Julian Osborne,University of Leicester,UK,,,,,,,,,,,Julian,Osborne,,,,,
+,,Stefano Profumo,"University of California, Santa Cruz",USA,,,,,,,,,,,Stefano,Profumo,,,,,
+,,Hyuga Abe,ICRR,Japan,,,,,,,,,,,Hyuga,Abe,,,,,
+,,Shoichi Ichinose,Shizuoka University,Japan,,,,,,,,,,,Shoichi,Ichinose,,,,,
+,,Masashi Yokoyama,University of Tokyo,Japan,,,,,,,,,,,Masashi,Yokoyama,,,,,
+,,Alexander Zaytsev,Universität Hamburg,Germany,,,,,,,,,,,Alexander,Zaytsev,,,,,
+,,Ken-Ichi Fushimi,Tokushima University,Japan ,,,,,,,,,,,Ken-Ichi,Fushimi,,,,,
+,,Lalit Kumar Saini,University of Delhi,India,,,,,,,,,,,Lalit Kumar,Saini,,,,,
+,,Mihoko Nojiri,KEK ,Japan ,,,,,,,,,,,Mihoko,Nojiri,,,,,
+,,Motoi Endo,KEK,Japan ,,,,,,,,,,,Motoi,Endo,,,,,
+,,Michele Doro,University of Padova,Italy,,,,,,,,,,,Michele,Doro,,,,,
+,,Alejandra Aguirre-Santaella,IFT UAM-CSIC,Spain,,,,,,,,,,,Alejandra,Aguirre-Santaella,,,,,
+,,Percy Cáceres,Puc Rio de Janeiro,Brazil,,,,,,,,,,,Percy,Cáceres,,,,,
+,,Ruben Lopez-Coto,INFN Padova,Italy,,,,,,,,,,,Ruben,Lopez-Coto,,,,,
+,,Shigemi Ohta,"IPNS, KEK",Japan,,,,,,,,,,,Shigemi,Ohta,,,,,
+,,Lingfeng Li,Brown U.,United States,,,,,,,,,,,Lingfeng,Li,,,,,
+,,Kaito Sugizaki,"ICEPP, The University of Tokyo",Japan,,,,,,,,,,,Kaito,Sugizaki,,,,,
+,,Sei Yoshida,Osaka University,Japan,,,,,,,,,,,Sei,Yoshida,,,,,
+,,Genta Sato,Tohoku University,Japan,,,,,,,,,,,Genta,Sato,,,,,
+,,Sander Vermeulen,Cardiff University,United Kingdom,,,,,,,,,,,Sander,Vermeulen,,,,,
+,,Kentarou Mawatari,Iwate U.,Japan,,,,,,,,,,,Kentarou,Mawatari,,,,,
+,,Shigetaka Moriyama,"ICRR, University of Tokyo",Japan,,,,,,,,,,,Shigetaka,Moriyama,,,,,
+,,Elisa Pueschel,DESY,Germany,,,,,,,,,,,Elisa,Pueschel,,,,,
+,,Anna Genina,Max Planck Institute for Astrophysics,Germany,,,,,,,,,,,Anna,Genina,,,,,
+,,Masahide Takada-Hidai,Tokai University,Japan,,,,,,,,,,,Masahide,Takada-Hidai,,,,,
+,,Michael Schmidt,The University of New South Wales Sydney,Australia,,,,,,,,,,,Michael,Schmidt,,,,,
+,,Chikara Kawai,U-Tokyo,Japan,,,,,,,,,,,Chikara,Kawai,,,,,
+,,Shoji Asai,U-Tokyo,Japan,,,,,,,,,,,Shoji,Asai,,,,,
+,,Debajit Bose,IIT Kharagpur,India,,,,,,,,,,,Debajit,Bose,,,,,
+,,Kentaro Miuchi,Kobe University,Japan,,,,,,,,,,,Kentaro,Miuchi,,,,,
+,,Suyog Garg,The University of Tokyo,Japan,,,,,,,,,,,Suyog,Garg,,,,,
+,,Netor Mirabal,NASA GSFC,USA,,,,,,,,,,,Netor,Mirabal,,,,,
+,,Sandeep Kumar Shekhar,University of Padua,India,,,,,,,,,,,Sandeep Kumar,Shekhar,,,,,
+,,Andrew Cheek,"Astrocent, Nicolaus Copernicus Astronomical Center Polish Academy of Sciences",Poland,,,,,,,,,,,Andrew,Cheek,,,,,
+,,Keiko Nagao,Okayama University of Science,Japan,,,,,,,,,,,Keiko,Nagao,,,,,
+,,Manoranjan Dutta,Indian Institute of Technology Hyderabad,India,,,,,,,,,,,Manoranjan,Dutta,,,,,
+,,Milena Crnogorcevic,University of Maryland/NASA Goddard,United States,,,,,,,,,,,Milena,Crnogorcevic,,,,,
+,,Saurabh Shukla,Physical Research Laboratory,India,,,,,,,,,,,Saurabh,Shukla,,,,,
+,,SATYABRATA MAHAPATRA,"INDIAN INSTITUTE OF TECHNOLOGY, HYDERABAD",INDIA,,,,,,,,,,,SATYABRATA,MAHAPATRA,,,,,
+,,Kentaro Nagamine,Osaka U. / K-IPMU / UNLV,Japan,,,,,,,,,,,Kentaro,Nagamine,,,,,
+,,Masanori Iye,NAOJ,Japan,,,,,,,,,,,Masanori,Iye,,,,,
+,,Minoru Nishimura,The Open University of Japan,Japan,,,,,,,,,,,Minoru,Nishimura,,,,,
+,,Yasuyuki Horii,Nagoya University,Japan,,,,,,,,,,,Yasuyuki,Horii,,,,,
+,,Yuta Michimura,"Department of Physics, University of Tokyo",Japan,,,,,,,,,,,Yuta,Michimura,,,,,
+,,Hiroaki Sugiyama,Toyama Prefectural Univ.,Japan,,,,,,,,,,,Hiroaki,Sugiyama,,,,,
+,,Kohei Yorita,Waseda University,Japan,,,,,,,,,,,Kohei,Yorita,,,,,
+,,TAKUMI NAKAJIMA,Nagoya Univ.,Japan,,,,,,,,,,,TAKUMI,NAKAJIMA,,,,,
+,,Miho Ishigaki,NAOJ,Japan,,,,,,,,,,,Miho,Ishigaki,,,,,
+,,Andrea Santangelo,"IAAT, Kepler Center, University of Tübingen",Germany,,,,,,,,,,,Andrea,Santangelo,,,,,
+,,Yasuhito Kaminaga,"National Institute of Technology, Gunma College",Japan,,,,,,,,,,,Yasuhito,Kaminaga,,,,,
+,,Michael Zantedeschi,"Max-Planck Institute for Physics, Munich",Germany,,,,,,,,,,,Michael,Zantedeschi,,,,,
+,,Gernot Maier,DESY,Germany,,,,,,,,,,,Gernot,Maier,,,,,
+,,Anna Jankowsky,Max Planck for Particle Physics,Germany,,,,,,,,,,,Anna,Jankowsky,,,,,
+,,Yunji Ha,Seoul National University ,South Korea,,,,,,,,,,,Yunji,Ha,,,,,
+,,Masayuki Wakayama,Chiba Institute of Technology,Japan,,,,,,,,,,,Masayuki,Wakayama,,,,,
+,,Anne Green,University of Nottingham,UK,,,,,,,,,,,Anne,Green,,,,,
+,,Tomohiro Fujita,Waseda University,Japan,,,,,,,,,,,Tomohiro,Fujita,,,,,
+,,K. Kasahara,Shibaura Inst. of Tech.,Japan,,,,,,,,,,,K.,Kasahara,,,,,
+,,Barbara Marcun,UNG ex-student,,,,,,,,,,,,Barbara,Marcun,,,,,
+,,Francisco Martínez López,University of Southampton and Queen Mary University of London,United Kingdom,,,,,,,,,,,Francisco Martínez,López,,,,,
+,,Kei-Ichi Kondo,Chiba University,Japan,,,,,,,,,,,Kei-Ichi,Kondo,,,,,
+,,Yuto Minami,"RCNP, Osaka Univ.",Japan,,,,,,,,,,,Yuto,Minami,,,,,
+,,Shihwen Hor,University of Tokyo,Japan,,,,,,,,,,,Shihwen,Hor,,,,,
+,,Soumya Sadhukhan,"Ramakrishna Mission Residential College (Autonomous), Kolkata, West Bengal",India,,,,,,,,,,,Soumya,Sadhukhan,,,,,
+,,Julia Djuvsland,University of Bergen,Norway,,,,,,,,,,,Julia,Djuvsland,,,,,
+,,Giacomo D'Amico,University of Bergen,Norway,,,,,,,,,,,Giacomo,D'Amico,,,,,
+,,Tobias Laimer,LMU Munich,Germany,,,,,,,,,,,Tobias,Laimer,,,,,
+,,Shuhei Ozawa,Toyama University,Japan,,,,,,,,,,,Shuhei,Ozawa,,,,,
+,,Bertrand Echenard,CAltech,USA,,,,,,,,,,,Bertrand,Echenard,,,,,
+,,Cristina Fernández,Universidad Autónoma de Madrid,Spain,,,,,,,,,,,Cristina,Fernández,,,,,
+,,Lorenzo Aiello,Cardiff University,United Kingdon,,,,,,,,,,,Lorenzo,Aiello,,,,,
+,,Lorenzo Marafatto,SIF italian physics society,Italia,,,,,,,,,,,Lorenzo,Marafatto,,,,,
+,,Tsunefumi Mizuno,Hiroshima University,Japan,,,,,,,,,,,Tsunefumi,Mizuno,,,,,
+,,Shohei Yanagita,Ibaraki University,Japan,,,,,,,,,,,Shohei,Yanagita,,,,,
+,,Daniel Kerszberg,IFAE-BIST,Spain,,,,,,,,,,,Daniel,Kerszberg,,,,,
+,,Brandon Melcher,Northeastern University,United States of America,,,,,,,,,,,Brandon,Melcher,,,,,
+,,Hiroshi Ito,Tokyo University of Science,Japan,,,,,,,,,,,Hiroshi,Ito,,,,,
+,,Matthew Gorton,University of Nottingham,United Kingdom,,,,,,,,,,,Matthew,Gorton,,,,,
+,,Ibrahim Mirza,University of Tennessee,United States,,,,,,,,,,,Ibrahim,Mirza,,,,,
+,,Yohei Nishino,The University of Tokyo,Japan,,,,,,,,,,,Yohei,Nishino,,,,,
+,,Rasmi Hajjar,IFIC - SSM,Spain - Italy,,,,,,,,,,,Rasmi,Hajjar,,,,,
+,,Patricio Escalona,Universidad Técnica Federico Santa María,Chile,,,,,,,,,,,Patricio,Escalona,,,,,
+,,Maien Binjonaid,King Saud University,Saudi Arabia,,,,,,,,,,,Maien,Binjonaid,,,,,
+,,Adil Jueid,Korea Institute for Advanced Study,South Korea,,,,,,,,,,,Adil,Jueid,,,,,
+,,Tatsumi Nitta,University of Washington,USA,,,,,,,,,,,Tatsumi,Nitta,,,,,
+,,Moritz Hütten,"ICRR, The University of Tokyo",Japan,,,,,,,,,,,Moritz,Hütten,,,,,
+,,Aakash Narayan,Osmania University,India,,,,,,,,,,,Aakash,Narayan,,,,,
+,,Takafumi Tsukui,NAOJ/SOKENDAI,Japan,,,,,,,,,,,Takafumi,Tsukui,,,,,
+,,Tomohisa Ogawa,KEK,Japan,,,,,,,,,,,Tomohisa,Ogawa,,,,,
+,,Kiyoharu Kawana,Seoul National University,South Korea,,,,,,,,,,,Kiyoharu,Kawana,,,,,
+,,Masato Shirasaki,National Astronomical Observatory of Japan,Japan,,,,,,,,,,,Masato,Shirasaki,,,,,
+,,Mitsuaki Nozaki,KEK,Japan,,,,,,,,,,,Mitsuaki,Nozaki,,,,,
+,,Toshinori Mori,The University of Tokyo,Japan,,,,,,,,,,,Toshinori,Mori,,,,,
+,,Kenji Kadota,ICTP-AP,China,,,,,,,,,,,Kenji,Kadota,,,,,
+,,Ali Murat Güler,METU,Turkey,,,,,,,,,,,Ali Murat,Güler,,,,,
+,,Marco Regis,University of Torino and INFN,Italy,,,,,,,,,,,Marco,Regis,,,,,
+,,Atsushi J. Nishizawa,Nagoya University,Japan,,,,,,,,,,,Atsushi J.,Nishizawa,,,,,
+,,Masahito Yamazaki,IPMU,Japan,,,,,,,,,,,Masahito,Yamazaki,,,,,
+,,Sergio Hernández-Cadena,"Instituto de Física, UNAM",Mexico,,,,,,,,,,,Sergio,Hernández-Cadena,,,,,
+,,Masao Mori,University of Tsukuba,Japan,,,,,,,,,,,Masao,Mori,,,,,
+,,Nodoka Yamanaka,"KMI, Nagoya University",Japan,,,,,,,,,,,Nodoka,Yamanaka,,,,,
+,,Tomohiro Harada,Rikkyo University,Japan,,,,,,,,,,,Tomohiro,Harada,,,,,
+,,Mayu Sakurai,Waseda Univercity,Japan,,,,,,,,,,,Mayu,Sakurai,,,,,
+,,Yoshio Kamiya,The Univ. of Tokyo,Japan,,,,,,,,,,,Yoshio,Kamiya,,,,,
+,,Kei Kanezaki,Kobe University,Japan,,,,,,,,,,,Kei,Kanezaki,,,,,
+,,Yuki Miyamoto,Okayama University,Japan,,,,,,,,,,,Yuki,Miyamoto,,,,,
+,,Mika Kagaya,"National Institute of Technology, Sendai College",Japan,,,,,,,,,,,Mika,Kagaya,,,,,
+,,Hidaka Keisho,Tokyo Gakugei University,Japan,,,,,,,,,,,Hidaka,Keisho,,,,,
+,,Genta Sato,Tohoku University,Japan,,,,,,,,,,,Genta,Sato,,,,,
