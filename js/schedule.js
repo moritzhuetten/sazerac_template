@@ -12,10 +12,13 @@ function pad(n, width, z) {
 var csvfile = 'data/schedule.csv'
 
 
-var tags = ['Analogues','Reionization','Dark ages','First stars','AGN','Star formation histories','Metal/dust enrichment','Escape fractions','Theory','Observations','Tools','Outreach and diversity','Other'];
+var tags = ['DM Astrophysics','Primordial Black Holes','Collider searches','DM Theory','Direct Detection','Indirect Detection','Invited talk','Contributed talk','Session A','Session B'];
 
-var time_zones = ['PDT','MDT','CDT','EDT','BST','CEST','CST','AWST','JST','AEST'];
-var offsets = [-7,-6,-5,-4,1,2,8,8,9,10];
+var time_zones = ['PST','MST','CST','EST','UTC','CET','IST', 'AWST','JST','AEST'];
+
+var days = ['Monday','Tuesday','Wednesday','Thursday'];
+
+var offsets = [-8,-7,-6,-5,0,1,5.3,8,9,10];
 
 var tag_state = {};
 var session_state = {};
@@ -39,17 +42,21 @@ function make_tag_list() {
     tag_id = tags[i];
     var tag = document.createElement("li");
     tag.className = 'tag';
-    tag.innerHTML = '<label><input class="checkbox" type="checkbox" id="'+tag_id+'" name="'+tag_id+'" checked=true> &nbsp;'+tag_id+'</label>'
+    if (i!=7) {
+    	    tag.innerHTML = '<label><input class="checkbox" type="checkbox" id="'+tag_id+'" name="'+tag_id+'" checked=true> &nbsp;'+tag_id+'</label>'
+    } else {
+    	 tag.innerHTML = '<label  style="margin-bottom:80px;"><input class="checkbox" type="checkbox" id="'+tag_id+'" name="'+tag_id+'" checked=true> &nbsp;'+tag_id+'</label>'
+    }
     $("#tag_list").append(tag);
     tag_state[tag_id] = true;
 
   }
 
-  for (i=0; i<5; i++) {
+  for (i=0; i<4; i++) {
     var tag = document.createElement("li");
     tag.className = 'tag';
     session = i+1;
-    tag.innerHTML = '<label><input class="session_checkbox" type="checkbox" id="session'+session+'" name="session'+session+'" checked=true> &nbsp; Session '+session+'</label>'
+    tag.innerHTML = '<label><input class="session_checkbox" type="checkbox" id="session'+session+'" name="session'+session+'" checked=true> &nbsp;'+days[i]+'</label>'
     $("#session_list").append(tag);
     session_state['session'+session] = true;
     console.log(i);
@@ -94,7 +101,7 @@ $(document).ready(function() {
 
   $("#check_all_sessions").click(function() {
     $('.session_checkbox').prop('checked', true);
-    for (i=0;i<5;i++) {
+    for (i=0;i<4;i++) {
       session = i+1;
       session_state['session'+session] = true;
     }
@@ -103,7 +110,7 @@ $(document).ready(function() {
 
   $("#check_no_sessions").click(function() {
     $('.session_checkbox').prop('checked', false);
-    for (i=0;i<5;i++) {
+    for (i=0;i<4;i++) {
       session = i+1;
       session_state['session'+session] = false;
     }
@@ -167,14 +174,25 @@ function showInfo() {
           if (session != previous_session) {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
-            tabCell.colSpan = 3;
-            tabCell.innerHTML = '<span style="font-size:25pt;color:#888;"><b>SESSION '+session+'</b></span>';
+            tabCell.colSpan = 4;
+            tabCell.innerHTML = '<span style="font-size:22pt;color:#888;font-family:Quicksand;">'+days[session-1]+'</span>';
+            if (((talk==0 && previous_talk==0) || (talk==1 && previous_talk>=5) || (talk==1 && previous_talk==0)) && d['Session'][1]!='B') {
+            if (session != 1) {
+                tabCell.innerHTML +='<br><span style="color:#888;"><b><a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby and poster rooms are open</b></span>';
+                } else {
+                	tabCell.innerHTML +='<br><span style="color:#888;"><b><a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby and poster rooms open at 9:00 UTC</b></span>';
+                }
+            }
           } else {
-            if (talk==1 && previous_talk==6) {
+            if (talk==1 && previous_talk==5) {
               tr = table.insertRow(-1);
               var tabCell = tr.insertCell(-1);
-              tabCell.colSpan = 3;
-              tabCell.innerHTML = '<span style="font-size:20pt;color:#AAA;"><b>COFFEE/DISCUSSION BREAK</b></span>';
+              tabCell.colSpan = 4;
+              if (session==3) {
+              tabCell.innerHTML = '<span style="font-size:16pt;color:#AAA;">Poster session</span> <span style="color:#888;"><b>&nbsp;&nbsp;<a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a>. See <a href=posters.html>here</a> for list of posters.</b></span>';
+              } else {
+              tabCell.innerHTML = '<span style="font-size:16pt;color:#AAA;">Coffee &amp; discussion break</span> <b>&nbsp;&nbsp;<a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a></b>';
+              }
             }
           }
 
@@ -185,13 +203,16 @@ function showInfo() {
 
           for (var k=0; k<time_zones.length; k++) {
             time = parseInt(d['Time'])+offsets[k]*100;
+            if (time.toString()[2]>5) {
+              time = time + 40;
+            }
             if (time>=2400) {
               time = time - 2400;
               time = pad(time, 4)+'+1';
             } else {
               time = pad(time, 4);
             }
-            time_list += '<b>'+time_zones[k]+': </b>'+time+'<br>';
+            time_list += '<b>'+time_zones[k]+': </b>'+time.slice(0, 2)+':'+time.slice(2, 4)+'<br>';
           }
 
 
@@ -200,7 +221,7 @@ function showInfo() {
           abstract = abstract.replace(/>/g, "&gt;");
 
           var tabCell = tr.insertCell(-1);
-          tabCell.innerHTML = '<div class="tooltip"><b>'+d['Session']+'/'+d['Talk']+'</b> '+d['Date']+' '+d['Time']+'<span class="tooltiptext" style="width:100px;">'+time_list+'</span></div>';
+          tabCell.innerHTML = '<div class="tooltip"id='+d['Session']+d['Talk']+' class="anchor"><!--<a href="https://2020.kashiwa-darkmatter-symposia.org/schedule.html#'+d['Session']+d['Talk']+'" style="text-decoration:none">&#128279;</a> &nbsp;-->'+d['Date']+', '+d['Time'].slice(0, 2)+':'+d['Time'].slice(2, 4)+'<span class="tooltiptext" style="width:100px;">'+time_list+'</span></div>';
 
           var tabCell = tr.insertCell(-1);
           tabCell.innerHTML = '<div class="tooltip"><b>'+d['First Name']+' '+d['Family Name']+ '<span class="tooltiptext" style="width:300px;">'+ d['Institution']+'<br><a href="mailto:'+d['Email']+'">'+d['Email']+'</a></span></div>';
@@ -209,22 +230,46 @@ function showInfo() {
           tabCell.innerHTML = '<div class="tooltip">'+d['Title'] + '<span class="tooltiptext"><b>' + d['Tags']+ '</b><br>' + abstract +'</span></div>';
 
           var tabCell = tr.insertCell(-1);
+          if (d['Slack']) {
+          tabCell.innerHTML = '<a href="'+d['Slack']+'" target=_blank><b>Slack channel</b></a>';
+          }
+          
+          /*var tabCell = tr.insertCell(-1);
 
 
           recording = '';
           if (recorded=='Yes') {
-            recording = ' <b><a href="'+d['YouTube']+'">[Recorded]</a></b>';
+            if (d['YouTube']!='') {
+                 recording = ' <b><a href="'+d['YouTube']+'">[Recording]</a></b>';
+            } else {
+                recording =  <b><a href="https://www.youtube.com/channel/UCpjf2aTgzFsVM5lXT6LpgqA", target=_blank>Live stream</a></b>';
+            }
+          } else {
+          	recording = recorded;
           }
 
-          console.log(d['YouTube']);
-          if (d['YouTube']!='') {
-            recording = ' <b><a href="'+d['YouTube']+'">[Recording]</a></b>';
-          }
 
-          tabCell.innerHTML = recording
+          tabCell.innerHTML = recording*/
 
           previous_session = session;
           previous_talk = talk;
+
+          if (talk==5 && d['Session'][1]=='B' && session != 4 && session != 2) {
+            tr = table.insertRow(-1);
+            var tabCell = tr.insertCell(-1);
+            tabCell.colSpan = 4;
+            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:30 UTC. <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby and poster rooms remain open for discussion</b></span><br><br>';
+          } else if (talk==6 && d['Session'][1]=='B' && session == 4) {
+            tr = table.insertRow(-1);
+            var tabCell = tr.insertCell(-1);
+            tabCell.colSpan = 4;
+            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:45 UTC. <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby and poster rooms remain open until the end of the day</b></span><br><br>';
+          } else if (talk==6 && d['Session'][1]=='B' && session == 2) {
+            tr = table.insertRow(-1);
+            var tabCell = tr.insertCell(-1);
+            tabCell.colSpan = 4;
+            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:35 UTC. <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby and poster rooms remain open for discussion</b></span><br><br>';
+          }
 
         }
 
