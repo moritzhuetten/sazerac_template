@@ -176,22 +176,22 @@ function showInfo() {
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 4;
             tabCell.innerHTML = '<span style="font-size:22pt;color:#888;font-family:Quicksand;">'+days[session-1]+'</span>';
-            if (((talk==0 && previous_talk==0) || (talk==1 && previous_talk>=5) || (talk==1 && previous_talk==0)) && d['Session'][1]!='B') {
+            if (((talk==0 && previous_talk==0) || (talk==1 && previous_talk>=4) || (talk==1 && previous_talk==0)) && d['Session'][1]!='B') {
             if (session != 1) {
-                tabCell.innerHTML +='<br><span style="color:#888;"><b><a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby and poster rooms are open</b></span>';
+                tabCell.innerHTML +='<br><span style="color:#888;"><b><a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Gather.Town</a> venue is open.</b></span>';
                 } else {
-                	tabCell.innerHTML +='<br><span style="color:#888;"><b><a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby and poster rooms open at 9:00 UTC</b></span>';
+                	tabCell.innerHTML +='<br><span style="color:#888;"><b><a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Gather.Town</a> venue opens at 6:00 UTC.</b></span>';
                 }
             }
           } else {
-            if (talk==1 && previous_talk==5) {
+            if (talk==1 && previous_talk==6) {
               tr = table.insertRow(-1);
               var tabCell = tr.insertCell(-1);
               tabCell.colSpan = 4;
               if (session==3) {
-              tabCell.innerHTML = '<span style="font-size:16pt;color:#AAA;">Poster session</span> <span style="color:#888;"><b>&nbsp;&nbsp;<a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a>. See <a href=posters.html>here</a> for list of posters.</b></span>';
+              tabCell.innerHTML = '<span style="font-size:16pt;color:#AAA;">Poster session</span> <span style="color:#888;"><b>&nbsp;&nbsp;<a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>on Gather.Town</a>. See <a href=posters.html>here</a> for list of posters.</b></span>';
               } else {
-              tabCell.innerHTML = '<span style="font-size:16pt;color:#AAA;">Coffee &amp; discussion break</span> <b>&nbsp;&nbsp;<a href=https://spatial.chat/s/dm2020kashiwa target=_blank>on SpatialChat</a></b>';
+              tabCell.innerHTML = '<span style="font-size:16pt;color:#AAA;">Coffee &amp; discussion break</span> <b>&nbsp;&nbsp;<a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>on Gather.Town</a></b>';
               }
             }
           }
@@ -254,21 +254,26 @@ function showInfo() {
           previous_session = session;
           previous_talk = talk;
 
-          if (talk==5 && d['Session'][1]=='B' && session != 4 && session != 2) {
+          if (talk==4 && d['Session']=='1B') {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 4;
-            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:30 UTC. <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby and poster rooms remain open for discussion</b></span><br><br>';
-          } else if (talk==6 && d['Session'][1]=='B' && session == 4) {
+            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 12:00 UTC. <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Gather.Town</a> lobby and poster rooms remain open for discussion.</b></span><br><br>';
+          } else if (talk==6 && d['Session']=='2B') {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 4;
-            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:45 UTC. <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby and poster rooms remain open until the end of the day</b></span><br><br>';
-          } else if (talk==6 && d['Session'][1]=='B' && session == 2) {
+            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 12:00 UTC. <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Gather.Town</a> lobby and poster rooms remain open for discussion.</b></span><br><br>';
+          } else if (talk==5 && d['Session']=='3B') {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 4;
-            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 13:35 UTC. <a href=https://spatial.chat/s/dm2020kashiwa target=_blank>SpatialChat</a> lobby and poster rooms remain open for discussion</b></span><br><br>';
+            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 14:00 UTC. <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Gather.Town</a> lobby and poster rooms remain open for discussion.</b></span><br><br>';
+          } else if (talk==7 && d['Session']=='4B') {
+            tr = table.insertRow(-1);
+            var tabCell = tr.insertCell(-1);
+            tabCell.colSpan = 4;
+            tabCell.innerHTML +='<span style="color:#888;"><b>Zoom session closing at 14:15 UTC. <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Gather.Town</a> lobby and poster rooms remain open until the end of the day.</b></span><br><br>';
           }
 
         }
