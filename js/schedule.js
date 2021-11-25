@@ -175,12 +175,12 @@ function showInfo() {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 4;
-            tabCell.innerHTML = '<span style="font-size:22pt;color:#AAA;font-family:Quicksand;">'+days[session-1]+'</span>';
+            tabCell.innerHTML = '<span style="font-size:22pt;color:#AAA;font-family:Quicksand;">&nbsp;'+days[session-1]+'</span>';
             if (((talk==0 && previous_talk==0) || (talk==1 && previous_talk>=4) || (talk==1 && previous_talk==0)) && d['Session'][1]!='B') {
             if (session != 1) {
-                tabCell.innerHTML +='<br><span style="color:#AAA;;"><b><a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Gather.Town venue</a> is open.</b></span>';
+                tabCell.innerHTML +='<br><span style="color:#AAA;;"><b>&nbsp;&nbsp;<a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Gather.Town venue</a> is open.</b></span>';
                 } else {
-                	tabCell.innerHTML +='<br><span style="color:#AAA;"><b>6:00 UTC: Participants can log in to  the <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Gather.Town venue</a>. See your E-mail for details.</b></span>';
+                	tabCell.innerHTML +='<br><span style="color:#AAA;"><b>&nbsp;&nbsp;6:00 UTC: Participants can log in to  the <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Gather.Town venue</a>. See your E-mail for details.</b></span>';
                 }
             }
           } else {
@@ -189,13 +189,13 @@ function showInfo() {
               var tabCell = tr.insertCell(-1);
               tabCell.colSpan = 4;
               if (session==3) {
-              tabCell.innerHTML = '<span style="color:#AAA; line-height: 3;"><b>11:00 - 12:00 UTC: <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Poster session on Gather.Town</a>. See <a href=posters.html>here</a> for list of posters.</b></span>';
+              tabCell.innerHTML = '<span style="color:#AAA; line-height: 3;"><b>&nbsp;&nbsp;11:00 - 12:00 UTC: <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Poster session on Gather.Town</a>. See <a href=posters.html>here</a> for list of posters.</b></span>';
               } else if (session==1 || session==2) {
-              tabCell.innerHTML = '<span style="color:#AAA; line-height: 3;"><b>9:00 - 10:00 UTC:  <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Coffee/Lunch/dinner &amp; discussion break on Gather.Town</a>.</b>';
+              tabCell.innerHTML = '<span style="color:#AAA; line-height: 3;"><b>&nbsp;&nbsp;9:00 - 10:00 UTC:  <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Coffee/Lunch/dinner &amp; discussion break on Gather.Town</a>.</b>';
               } else if (session==3)  {
-              tabCell.innerHTML = '<span style="color:#AAA; line-height: 3;"><b>11:00 - 12:00 UTC:  <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Coffee/Lunch/dinner &amp; discussion break on Gather.Town</a>.</b>';
+              tabCell.innerHTML = '<span style="color:#AAA; line-height: 3;"><b>&nbsp;&nbsp;11:00 - 12:00 UTC:  <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Coffee/Lunch/dinner &amp; discussion break on Gather.Town</a>.</b>';
               } else  {
-              tabCell.innerHTML = '<span style="color:#AAA; line-height: 3;"><b>11:15 - 12:00 UTC:  <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Coffee/Lunch/dinner &amp; discussion break on Gather.Town</a>.</b>';
+              tabCell.innerHTML = '<span style="color:#AAA; line-height: 3;"><b>&nbsp;&nbsp;11:15 - 12:00 UTC:  <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Coffee/Lunch/dinner &amp; discussion break on Gather.Town</a>.</b>';
               }
             }
 			else if (talk==3 && d['Session'][1]!='B' && session !=4) {
@@ -203,42 +203,42 @@ function showInfo() {
               var tabCell = tr.insertCell(-1);
               tabCell.colSpan = 4;
               if (session==1) {
-              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>07:55 - 08:00 UTC: Break</b></span>';
+              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>&nbsp;&nbsp;07:55 - 08:00 UTC: Break</b></span>';
               } else if (session==2) {
-              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>07:50 - 08:00 UTC: <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Short coffee break on Gather.Town</a>.</b></span>';
+              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>&nbsp;&nbsp;07:50 - 08:00 UTC: <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Short coffee break on Gather.Town</a>.</b></span>';
               } else if (session==3)  {
-              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>09:50 - 10:00 UTC: <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Short coffee break on Gather.Town</a>.</b></span>';
+              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>&nbsp;&nbsp;09:50 - 10:00 UTC: <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Short coffee break on Gather.Town</a>.</b></span>';
               }
             }
 			else if (talk==2 && d['Session'][1]=='B' && session ==1) {
               tr = table.insertRow(-1);
               var tabCell = tr.insertCell(-1);
               tabCell.colSpan = 4;
-              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>10:50 - 11:00 UTC: <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Short coffee break on Gather.Town</a>.</b></span>';
+              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>&nbsp;&nbsp;10:50 - 11:00 UTC: <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Short coffee break on Gather.Town</a>.</b></span>';
             }
 			else if (talk==3 && d['Session'][1]=='B' && session ==2) {
               tr = table.insertRow(-1);
               var tabCell = tr.insertCell(-1);
               tabCell.colSpan = 4;
-              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>10:50 - 11:00 UTC: <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Short coffee break on Gather.Town</a>.</b></span>';
+              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>&nbsp;&nbsp;10:50 - 11:00 UTC: <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Short coffee break on Gather.Town</a>.</b></span>';
             }
 			else if (talk==5 && d['Session'][1]=='B' && session ==3) {
               tr = table.insertRow(-1);
               var tabCell = tr.insertCell(-1);
               tabCell.colSpan = 4;
-              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>13:00 - 13:10 UTC: <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Short coffee break on Gather.Town</a>.</b></span>';
+              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>&nbsp;&nbsp;13:00 - 13:10 UTC: <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Short coffee break on Gather.Town</a>.</b></span>';
             }
 			else if (talk==2 && d['Session'][1]=='A' && session ==4) {
               tr = table.insertRow(-1);
               var tabCell = tr.insertCell(-1);
               tabCell.colSpan = 4;
-              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>09:50 - 10:00 UTC: <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Short coffee break on Gather.Town</a>.</b></span>';
+              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>&nbsp;&nbsp;09:50 - 10:00 UTC: <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Short coffee break on Gather.Town</a>.</b></span>';
             }
 			else if (talk==3 && d['Session'][1]=='B' && session ==4) {
               tr = table.insertRow(-1);
               var tabCell = tr.insertCell(-1);
               tabCell.colSpan = 4;
-              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>12:50 - 13:00 UTC: <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Short coffee break on Gather.Town</a>.</b></span>';
+              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>&nbsp;&nbsp;12:50 - 13:00 UTC: <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Short coffee break on Gather.Town</a>.</b></span>';
             }
           }
 
@@ -267,7 +267,7 @@ function showInfo() {
           abstract = abstract.replace(/>/g, "&gt;");
 
           var tabCell = tr.insertCell(-1);
-          tabCell.innerHTML = '<div class="tooltip"id='+d['Session']+d['Talk']+' class="anchor"><!--<a href="https://2020.kashiwa-darkmatter-symposia.org/schedule.html#'+d['Session']+d['Talk']+'" style="text-decoration:none">&#128279;</a> &nbsp;-->'+d['Date']+', '+d['Time'].slice(0, 2)+':'+d['Time'].slice(2, 4)+'<span class="tooltiptext" style="width:100px;">'+time_list+'</span></div>';
+          tabCell.innerHTML = '<div class="tooltip"id='+d['Session']+d['Talk']+' class="anchor">'+'&nbsp;&nbsp;'+d['Date']+', '+d['Time'].slice(0, 2)+':'+d['Time'].slice(2, 4)+'<span class="tooltiptext" style="width:100px;">'+time_list+'</span></div>';
 
           var tabCell = tr.insertCell(-1);
           tabCell.innerHTML = '<div class="tooltip"><b>'+d['First Name']+' '+d['Family Name']+ '<span class="tooltiptext" style="width:300px;">'+ d['Institution']+'<br><a href="mailto:'+d['Email']+'">'+d['Email']+'</a></span></div>';
@@ -304,22 +304,22 @@ function showInfo() {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 4;
-            tabCell.innerHTML +='<span style="color:#AAA;line-height: 3;"><b>12:00 UTC: Zoom session closes.  <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Gather.Town lobby and poster rooms remain open for discussion</a>.</b></span><br><br>';
+            tabCell.innerHTML +='<span style="color:#AAA;line-height: 3;"><b>&nbsp;&nbsp;12:00 UTC: Zoom session closes.  <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Gather.Town lobby and poster rooms remain open for discussion</a>.</b></span><br><br>';
           } else if (talk==6 && d['Session']=='2B') {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 4;
-            tabCell.innerHTML +='<span style="color:#AAA;line-height: 3;"><b>12:00 UTC: Zoom session closes. <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Gather.Town lobby and poster rooms remain open for discussion</a>.</b></span><br><br>';
+            tabCell.innerHTML +='<span style="color:#AAA;line-height: 3;"><b>&nbsp;&nbsp;12:00 UTC: Zoom session closes. <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Gather.Town lobby and poster rooms remain open for discussion</a>.</b></span><br><br>';
           } else if (talk==5 && d['Session']=='3B') {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 4;
-            tabCell.innerHTML +='<span style="color:#AAA;line-height: 3;"><b>14:00 UTC: Zoom session closes. <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Gather.Town lobby and poster rooms remain open for discussion</a>.</b></span><br><br>';
+            tabCell.innerHTML +='<span style="color:#AAA;line-height: 3;"><b>&nbsp;&nbsp;14:00 UTC: Zoom session closes. <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Gather.Town lobby and poster rooms remain open for discussion</a>.</b></span><br><br>';
           } else if (talk==7 && d['Session']=='4B') {
             tr = table.insertRow(-1);
             var tabCell = tr.insertCell(-1);
             tabCell.colSpan = 4;
-            tabCell.innerHTML +='<span style="color:#AAA;line-height: 3;"><b>14:15 UTC: Zoom session closes. <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Gather.Town lobby and poster rooms remain open until the end of the day</a>.</b></span><br><br>';
+            tabCell.innerHTML +='<span style="color:#AAA;line-height: 3;"><b>&nbsp;&nbsp;14:15 UTC: Zoom session closes. <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Gather.Town lobby and poster rooms remain open until the end of the day</a>.</b></span><br><br>';
           }
 
         }
