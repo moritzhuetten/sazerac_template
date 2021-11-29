@@ -291,7 +291,10 @@ label > .label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: circle inside; }
+  list-style: circle inside; 
+  text-indent: -15px; /* key property */
+  margin-left: 15px; /* key property */
+    }
 ol {
   list-style: decimal inside; }
 ol, ul {
