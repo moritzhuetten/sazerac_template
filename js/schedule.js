@@ -198,12 +198,6 @@ function showInfo() {
               tabCell.innerHTML = '<span style="color:#AAA; line-height: 3;"><b>&nbsp;&nbsp;11:15 - 12:00 UTC:  <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Coffee/Lunch/dinner &amp; discussion break on Gather.Town</a>.</b>';
               } 
             }
-			else if (previous_talk==5 && session ==4 && d['Session'][1]=='B') {
-				              tr = table.insertRow(-1);
-              var tabCell = tr.insertCell(-1);
-              tabCell.colSpan = 4;
-				              tabCell.innerHTML = '<span style="color:#AAA; line-height: 3;"><b>&nbsp;&nbsp;11:00 - 12:00 UTC:  <a href=https://gather.town/app/ntOuE9XUjhnXcy7G/DMsympo2021 target=_blank>Coffee/Lunch/dinner &amp; discussion break on Gather.Town</a>.</b>';
-				}
 			else if (talk==3 && d['Session'][1]!='B' && session !=4) {
               tr = table.insertRow(-1);
               var tabCell = tr.insertCell(-1);
