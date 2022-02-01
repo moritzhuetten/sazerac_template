@@ -276,8 +276,14 @@ function showInfo() {
           tabCell.innerHTML = '<div class="tooltip">'+d['Title'] + '<span class="tooltiptext"><b>' + d['Tags']+ '</b><br>' + abstract +'</span></div>';
 
           var tabCell = tr.insertCell(-1);
-          if (d['Slack']) {
-          tabCell.innerHTML = '<a href="'+d['Slack']+'" target=_blank><b>Slack channel</b></a>';
+          if (d['Pdf']) {
+          tabCell.innerHTML = '<a href="'+d['Pdf']+'" target=_blank><b>Talk slides</b></a>';
+          } else {
+          	tabCell.innerHTML = '<b style="color:#FFF;opacity:0;">Talk slides</b>';
+          }
+
+          if (d['YouTube']) {
+          tabCell.innerHTML += '&nbsp;&nbsp;&nbsp;<a href="'+d['YouTube']+'?autoplay=1" target=_blank><b>YouTube</b></a>';
           }
           
           /*var tabCell = tr.insertCell(-1);
