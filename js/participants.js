@@ -24,7 +24,7 @@ function showInfo(results) {
 
   console.log(window.data);
 
-  $('#header').append('<h5><b>'+window.data.length+'</b> people from 28 countries have registered.</h5>');
+  $('#header').append('<h5><b>'+window.data.length+'</b> people have registered so far.</h5>');
 
     window.data.sort(function(a, b) {
       return a['Family Name'] > b['Family Name'];
