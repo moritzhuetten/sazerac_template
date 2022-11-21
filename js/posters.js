@@ -21,17 +21,15 @@ function shuffle(array) {
 }
 
 
-var tags = ['Analogues','Reionization','Dark ages','First stars','AGN','Star formation histories','Metal/dust enrichment','Escape fractions','Theory','Observations','Tools','Outreach and diversity','Other'];
+var csvfile = 'data/posters.csv'
 
-
-public_spreadsheet_url = 'https://cors-anywhere.herokuapp.com/https://docs.google.com/spreadsheets/d/e/2PACX-1vTiCh2eEGbqIqyabmOoT9t89ILSYJbcO84npWnnPBdDpv8KR8TigDNZvAgioASBWp6CDQ4FT7Bw6gY0/pub?gid=900996784&single=true&output=csv'
-
+var tags = ['Astrophysics and Cosmology','Light Dark Matter','DM Theory','Direct Detection','Indirect Detection'];
 
 var tag_state = {};
 
 function init() {
 
-  Papa.parse(public_spreadsheet_url, {
+  Papa.parse(csvfile, {
     download: true,
     header: true,
     complete: saveData
@@ -48,7 +46,11 @@ function make_tag_list() {
     tag_id = tags[i];
     var tag = document.createElement("li");
     tag.className = 'tag';
-    tag.innerHTML = '<label><input class="checkbox" type="checkbox" id="'+tag_id+'" name="'+tag_id+'" checked=true> &nbsp;'+tag_id+'</label>'
+    if (i==0) {
+            tag.innerHTML = '<label><input class="checkbox" type="checkbox" id="'+tag_id+'" name="'+tag_id+'" checked=true> &nbsp;Astro and Cosmo</label>'
+    } else {
+    	    tag.innerHTML = '<label><input class="checkbox" type="checkbox" id="'+tag_id+'" name="'+tag_id+'" checked=true> &nbsp;'+tag_id+'</label>'
+    }
     $("#tag_list").append(tag);
     tag_state[tag_id] = true;
     console.log(tag_id, tag_state[tag_id])
@@ -126,17 +128,24 @@ function showInfo() {
         tr.id = j;
 
         var tabCell = tr.insertCell(-1);
-        tabCell.innerHTML = '<div class="tooltip"><b>'+d['First Name']+' '+d['Family Name']+ '<span class="tooltiptext" style="width:300px;">'+ d['Institution']+'<br><a href="mailto:'+d['Email']+'">'+d['Email']+'</a></span></div>';
+        tabCell.innerHTML = '<div class="tooltip"><b>'+d['Name']+ '<span class="tooltiptext" style="width:300px;">'+ d['Institution']+'<br><a href="mailto:'+d['Email']+'">'+d['Email']+'</a></span></div>';
 
         var abstract = d['Abstract']
         abstract = abstract.replace(/</g, "&lt;");
         abstract = abstract.replace(/>/g, "&gt;");
 
         var tabCell = tr.insertCell(-1);
-        tabCell.innerHTML = '<div class="tooltip">'+d['Title'] + '<span class="tooltiptext"><b>' + d['Tags']+ '</b><br>' + abstract+'</span></div>';
+        tabCell.innerHTML = '<div class="tooltip">'+d['Title'] + '<span class="tooltiptext"><b>' + talk_tags+ '</b><br>' + abstract+'</span></div>';
 
         var tabCell = tr.insertCell(-1);
-        tabCell.innerHTML = '<a href="'+d['PDF']+'"><b>[Download Poster]</b></a>';
+        if (d['Pdf']) {
+        tabCell.innerHTML = '<a href="'+d['Pdf']+'" target=_blank><b>Download Poster</b></a>';
+        }
+
+        var tabCell = tr.insertCell(-1);
+        if (d['YouTube']) {
+        tabCell.innerHTML = '<a href="'+d['YouTube']+'" target=_blank><b>YouTube</b></a>';
+        }
 
       }
 
@@ -148,3 +157,4 @@ function showInfo() {
   divContainer.appendChild(table);
 
 }
+

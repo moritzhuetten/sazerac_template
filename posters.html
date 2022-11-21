@@ -1,85 +1,165 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
 
-    <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Kashiwa DM Symposium 2022 | POSTERS </title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/talks.css">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/talks.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <!-- <link rel="stylesheet" href="css/github-prettify-theme.css"> -->
+  <script src="js/site.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+  <script src="js/posters.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="icon" type="image/png" href="dist/images/favicon.png"> -->
+
+</head>
+<body class="code-snippets-visible">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="index.html">Start</a></li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#" data-popover="#aboutNavPopover">About</a>
+            <div id="aboutNavPopover" class="popover">
+              <ul class="popover-list">
+                <!-- <li class="popover-item">
+                  <a class="popover-link" href="index.html#Updates">Updates</a>
+                </li>-->
+                <li class="popover-item">
+                  <a class="popover-link" href="index.html#introduction">Rationale</a>
+                <li class="popover-item">
+                  <a class="popover-link" href="registration.html">Registration</a>
+                </li>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="index.html#highlights">Invited speakers</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="index.html#schedule">Schedule & venue</a>
+                </li>
+                 <li class="popover-item">
+                  <a class="popover-link" href="index.html#poster">Poster</a>
+                </li>
+                <li class="popover-item">                
+                  <a class="popover-link" href="index.html#SOC">SOC</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="index.html#conduct">Conduct</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="index.html#sponsors">Sponsors</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="index.html#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+        <li class="navbar-item">
+            <a class="navbar-link" href="#" data-popover="#scheduleNavPopover" >Talks</a>
+            <div id="scheduleNavPopover" class="popover">
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <a class="popover-link" href="schedule.html">Timetable</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="schedule.html#talklist">Talk list</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="schedule.html#selection">Selection process</a>
+                </li>
+              </ul>
+            </div>
+        </li>
+		<li class="navbar-item">
+            <a class="navbar-link" href="#" data-popover="#localNavPopover">Local info </a>
+            <div id="localNavPopover" class="popover">
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <a class="popover-link" href="infos.html#directions">How to get to Kashiwa</a>
+                </li>
+                <li class="popover-item">
+                             <a class="popover-link" href="infos.html#accomodation">Accomodation</a>
+     </li>
+                 <li class="popover-item">
+                  <a class="popover-link" href="infos.html#catering">Catering</a>
+                </li>
+                 <li class="popover-item">
+                  <a class="popover-link" href="infos.html#visa"k>Visa</a>
+                </li>
+                 <li class="popover-item">
+                  <a class="popover-link" href="infos.html#wifi">Local Wifi</a>
+                </li>
+                 <li class="popover-item">
+                  <a class="popover-link" href="infos.html#remote">Remote connection</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+	    <li class="navbar-item"><a class="navbar-link" href="participants.html">Attendants</a></li>
+
+		<li class="navbar-item">
+            <a class="navbar-link" href="#" data-popover="#pastNavPopover">Past symposia</a>
+            <div id="pastNavPopover" class="popover">
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <a class="popover-link" href="http://2021.kashiwa-darkmatter-symposia.org" target=_blank>2021 Symposium</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="http://2020.kashiwa-darkmatter-symposia.org" target=_blank>2020 Symposium</a>
+                </li>
+                 <li class="popover-item">
+                  <a class="popover-link" href="http://2019.kashiwa-darkmatter-symposia.org" target=_blank>2019 Symposium</a>
+                </li>
+              </ul>
+            </div>
+          </li>
 
 
-    <!-- Scripts –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="js/site.js"></script>
-    <script src="js/posters.js"></script>
+        <li class="navbar-item" style="float:right; margin-right: -4%;"><a class="navbar-link" href="https://twitter.com/dm_kashiwa" target=_blank title="Twitter"><img src="images/twitter.png" width="22" style="vertical-align:middle; "  onmouseover="this.src='images/twitter_active.png'" 
+onmouseout="this.src='images/twitter.png'"></a><a class="navbar-link" href="https://www.youtube.com/channel/UCpjf2aTgzFsVM5lXT6LpgqA" target=_blank title="Youtube channel"><img src="images/youtube.png" width="25" style="vertical-align:middle; "  onmouseover="this.src='images/youtube_active.png'" 
+onmouseout="this.src='images/youtube.png'"></a></li>
 
-    <meta charset="utf-8">
-    <title>SAZERAC | POSTERS </title>
-
-  </head>
-
-  <body>
-
-    <div class="container">
-
-      <div class="navbar-spacer"></div>
-      <nav class="navbar">
-        <div class="container">
-          <ul class="navbar-list">
-            <li class="navbar-item"><a class="navbar-link" href="index.html">SAZERAC</a></li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#" data-popover="#aboutNavPopover">About</a>
-              <div id="aboutNavPopover" class="popover">
-                <ul class="popover-list">
-                  <li class="popover-item">
-                    <a class="popover-link" href="index.html#Updates">Updates</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="index.html#introduction">Introduction</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="index.html#SOC">SOC</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="index.html#schedule">Schedule</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="index.html#conduct">Conduct</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="index.html#contact">Contact Us</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="index.html#sazerac">What is a Sazerac?</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="navbar-item"><a class="navbar-link" href="posters.html">Posters</a></li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#" data-popover="#talksNavPopover">Talks</a>
-              <div id="talksNavPopover" class="popover">
-                <ul class="popover-list">
-                  <li class="popover-item">
-                    <a class="popover-link" href="schedule.html">Live Schedule</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="talks.html">Recorded Talks</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="navbar-item"><a class="navbar-link" href="participants.html">Participants</a></li>
-          </ul>
-        </div>
-      </nav>
+        </ul>
+      </div>
+    </nav>
 
 
 
@@ -94,15 +174,18 @@
 
       <h3 class="docs-header">Posters</h3>
 
-      <p><b>Note:</b> Posters are ordered randomly.</p>
+      <p><b>Note:</b> Posters are discussed in the poster rooms on <a>Gather.Town</a> and on <a>Slack</a>. Two virtual <b>Poster sessions</b> will be held on <a>Gather.Town</a> on <b>Wednesday, Nov. 30, 08:00 - 09:00 UTC / 17:00 - 18:00 JST (Africa/Europe friendly)</b> and on Thursday, Dec. 1, 02:00 - 03:00 UTC / 11:00 - 12:00 JST  (America friendly).</p>
+      
+      <!--  <p>A collection of poster pitch videos can be found on our <a href=https://www.youtube.com/channel/UCpjf2aTgzFsVM5lXT6LpgqA/ target=_blank>YouTube channel</a>.<p>-->
+
+      <p><b>Note:</b> Posters are ordered randomly. Refreshing your browser will give you a new order.</p>
 
       <a class="button" id="check_all">Check all</a>
-      <a class="button" id="check_none">Check none</a>
+      <a class="button" id="check_none">Clear selection</a>
 
-      <div id='tag_list_div'><ul id = "tag_list"></ul></div>
+      <div id='tag_list_div'  style="height:200px;"><ul id = "tag_list"></ul></div>
 
-
-      <div class="docs-section" id="showData"></div>
+      <div class="docs-section" id="showData" style="margin-top:-100px;"></div>
 
     </div>
 
@@ -110,6 +193,6 @@
 
 
 
-
+<button class="button-top">&#8679;</button>
   </body>
 </html>
