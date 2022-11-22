@@ -138,13 +138,8 @@ function showInfo() {
         tabCell.innerHTML = '<div class="tooltip">'+d['Title'] + '<span class="tooltiptext"><b>' + talk_tags+ '</b><br>' + abstract+'</span></div>';
 
         var tabCell = tr.insertCell(-1);
-        if (d['Pdf']) {
-        tabCell.innerHTML = '<a href="'+d['Pdf']+'" target=_blank><b>Download Poster</b></a>';
-        }
-
-        var tabCell = tr.insertCell(-1);
-        if (d['YouTube']) {
-        tabCell.innerHTML = '<a href="'+d['YouTube']+'" target=_blank><b>YouTube</b></a>';
+        if (d['Slack']) {
+        tabCell.innerHTML = '<a href="'+d['Slack']+'" target=_blank><b>Slack channel</b></a>';
         }
 
       }
