@@ -1,2 +1,2 @@
-# 2021 Kashiwa Fark Matter symposium
-Website of 2021 Kashiwa Fark Matter symposium. Adapted from sazerac  - Steves' All Zoom Epoch of Reionisation Astronomy Conference
+# Kashiwa Dark Matter symposium website
+Website of the [Kashiwa Dark Matter symposium series](https://kashiwa-darkmatter-symposia.org/). Adapted from sazerac  - Steves' All Zoom Epoch of Reionisation Astronomy Conference
