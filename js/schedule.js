@@ -183,7 +183,7 @@ function showInfo() {
             if (day != 1) {
                 tabCell.innerHTML +='<br><span style="color:#AAA;;"><b>&nbsp;&nbsp;9:00 JST: Kashiwa Libary Hall opens.</b></span>';
                 } else {
-                	tabCell.innerHTML +='<br><span style="color:#AAA;"><b>&nbsp;&nbsp;5:00 UTC / 14:00 JST: Registration at Kashiwa Library Hall opens. Virtual participants can log in to  <a>Gather.Town</a>.</b></span>';
+                	tabCell.innerHTML +='<br><span style="color:#AAA;"><b>&nbsp;&nbsp;5:00 UTC / 14:00 JST: Registration at Kashiwa Library Hall opens. Virtual participants can log in to  <a href=https://app.gather.town/events/LtcFlWG-SxKc4XYM9Sg0>Gather.Town</a>.</b></span>';
                 }
             }
           } else {
