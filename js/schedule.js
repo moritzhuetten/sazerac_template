@@ -203,19 +203,19 @@ function showInfo() {
               tr = table.insertRow(-1);
               var tabCell = tr.insertCell(-1);
               tabCell.colSpan = 4;
-              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>&nbsp;&nbsp;04:00 - 06:00 UTC / 13:00 - 15:00 JST: Lunch break.</b></span>';
+              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>&nbsp;&nbsp;04:00 - 06:00 UTC / 13:00 - 15:00 JST: Lunch break<br>&nbsp;&nbsp;14:50 JST: Group picture with onsite-participants.</b></span>';
             }
 			else if (day == 2 && session =='D' && talk== 1) {
               tr = table.insertRow(-1);
               var tabCell = tr.insertCell(-1);
               tabCell.colSpan = 4;
-              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>&nbsp;&nbsp;08:00 - 09:00 UTC / 17:00 - 18:00 JST:  <a>Poster session on Gather.Town</a> (Africa/Europe friendly).</b></span>';
+              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>&nbsp;&nbsp;08:00 UTC: Virtual group picture (Africa/Europe friendly). Please join previous Zoom session to participate. <br>&nbsp;&nbsp;08:05 - 09:00 UTC / 17:05 - 18:00 JST:  <a>Poster session on Gather.Town</a> (Africa/Europe friendly).</b></span>';
             }
 			else if (day == 3 && session =='B' && talk== 1) {
               tr = table.insertRow(-1);
               var tabCell = tr.insertCell(-1);
               tabCell.colSpan = 4;
-              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>&nbsp;&nbsp;02:00 - 03:00 UTC / 11:00 - 12:00 JST:  <a>Poster session on Gather.Town</a> (America friendly).</b></span>';
+              tabCell.innerHTML = '<span style="color:#AAA;line-height: 3;"><b>&nbsp;&nbsp;02:00 UTC: Virtual group picture (America friendly). Please join previous Zoom session to participate. <br>&nbsp;&nbsp;02:05 - 03:00 UTC / 11:05 - 12:00 JST:  <a>Poster session on Gather.Town</a> (America friendly).</b></span>';
             } else if (day == 3 && session =='C' && talk== 1) {
               tr = table.insertRow(-1);
               var tabCell = tr.insertCell(-1);
