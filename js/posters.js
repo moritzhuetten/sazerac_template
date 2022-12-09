@@ -141,6 +141,15 @@ function showInfo() {
         if (d['Slack']) {
         tabCell.innerHTML = '<a href="'+d['Slack']+'" target=_blank><b>Slack channel</b></a>';
         }
+        
+        if (d['PDF']) {
+          tabCell.innerHTML += '<br><a href="'+d['PDF']+'" target=_blank><b>Poster (PDF)</b></a>';
+        }
+
+        var tabCell = tr.insertCell(-1);
+        if (d['Youtube']) {
+        tabCell.innerHTML = '<a href="'+d['Youtube']+'" target=_blank><b>YouTube</b></a>';
+        }
 
       }
 

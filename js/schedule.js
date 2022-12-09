@@ -278,8 +278,15 @@ function showInfo() {
           tabCell.innerHTML = '<a href="'+d['Slack']+'" target=_blank><b>Slack channel</b></a>';
           }
           
-          /*var tabCell = tr.insertCell(-1);
 
+
+          if (d['PDF']) {
+          tabCell.innerHTML += '<br><a href="'+d['PDF']+'" target=_blank><b>Talk slides</b></a>';
+          }/* else {
+          	tabCell.innerHTML += '<br><b style="color:#FFF;opacity:0;">Talk slides</b>';
+          }
+
+          var tabCell = tr.insertCell(-1);
 
           recording = '';
           if (recorded=='Yes') {
