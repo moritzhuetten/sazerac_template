@@ -24,7 +24,7 @@ function showInfo(results) {
 
   console.log(window.data);
 
-  $('#header').append('<h5><b>'+window.data.length+'</b> people from 30 countries have registered.<br> Thereof, 60 participants attend in person and 188 online.</h5>');
+  $('#header').append('<h5><b>'+window.data.length+'</b> people from 30 countries have registered.<br> Thereof, 60 participants attend in person and 190 online.</h5>');
 
     window.data.sort(function(a, b) {
       return a['Family Name'] > b['Family Name'];
